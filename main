@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lebenslauf von Hesham Elshamy">
+    <title>Lebenslauf - Hesham Elshamy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hesham Elshamy</h1>
+        <p>Bauingenieur | Essen, Deutschland</p>
+        <p>Email: <a href="mailto:heshamelshamy2000@gmail.com">heshamelshamy2000@gmail.com</a></p>
+        <p>Telefon: +491782362766</p>
+    </header>
+
+    <section id="about">
+        <h2>Persönliche Daten</h2>
+        <ul>
+            <li><strong>Name:</strong> Hesham Elshamy</li>
+            <li><strong>Anschrift:</strong> Auf der Union 6b, 45141 Essen</li>
+            <li><strong>Geburtsdatum -ort:</strong> 07.08.1993 in Kafrelshikh, Ägypten</li>
+            <li><strong>Familienstand:</strong> ledig, keine Kinder</li>
+            <li><strong>Staatsangehörigkeit:</strong> ägyptisch</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Berufliche Erfahrung</h2>
+        <ul>
+            <li>
+                <strong>BIM Koordinator / Bauingenieur, Bramey.Bünermann Ingenieure GmbH</strong> (04.2023 – Heute)<br>
+                BIM Modellierung in den Leistungsphasen 2 und 3 HOAI
+            </li>
+            <li>
+                <strong>Bauingenieur Straßenplanung, Autobahn GmbH des Bundes</strong> (04.2023 – Heute)<br>
+                Ausschreibung und Vergabe von Planungsleistungen, Koordinierung und Betreuung
+            </li>
+            <!-- Add more experiences here from the document -->
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Ausbildung</h2>
+        <ul>
+            <li>
+                <strong>M.Sc. Bauingenieurwesen</strong> (2020 – 2023)<br>
+                Universität Duisburg-Essen, Vertiefung: Infrastruktur und Umwelt<br>
+                Note: 13, Masterarbeit: Entwurf einer P+R-Anlage in Essen-Werden
+            </li>
+            <li>
+                <strong>B.Sc. Bauingenieurwesen</strong> (2011 – 2016)<br>
+                Universität Kafrelshikh, Note: 22 (Honor Degree)
+            </li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Qualifikationen und Kenntnisse</h2>
+        <ul>
+            <li><strong>Hervorragende Kenntnisse:</strong> VESTRA INFRAVISION, AutoCAD Civil 3D, BricsCAD, Microsoft Office</li>
+            <li><strong>Fortgeschrittene Kenntnisse:</strong> Infraworks, PTV Visum und Vissim, Google Earth</li>
+            <li><strong>Grundkenntnisse:</strong> Adobe Photoshop, Illustrator</li>
+        </ul>
+    </section>
+
+    <section id="languages">
+        <h2>Sprachkenntnisse</h2>
+        <ul>
+            <li><strong>Arabisch:</strong> Muttersprache</li>
+            <li><strong>Englisch:</strong> Fließend</li>
+            <li><strong>Deutsch:</strong> Verhandlungssicher</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Für weitere Informationen können Sie mich per E-Mail erreichen: <a href="mailto:heshamelshamy2000@gmail.com">heshamelshamy2000@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hesham Elshamy. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>

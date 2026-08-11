@@ -1,0 +1,21 @@
+name: Automatischer Backup
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Quell-Repository
+        run: git clone --mirror https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/heshamelshamy/heshamelshamy.github.io.git repo.git
+
+      - name: Push zum Backup-Repository
+        run: |
+          cd repo.git
+          git remote set-url --push origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/heshamelshamy/heshamelshamy-backup.git
+          git push --mirror

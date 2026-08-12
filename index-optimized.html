@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f3ef" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <title>Hesham Elshamy Bauingenieur (M.Sc.) | BIM-Modellierer Infrastruktur | Straßen- und Entwässerungsplanung</title>
+  <meta name="description" content="Portfolio von Hesham Elshamy, Bauingenieur (M.Sc.), BIM-Modellierer Infrastruktur sowie Spezialist für Straßen- und Entwässerungsplanung." />
+  <link rel="canonical" href="https://heshamelshamy.github.io/" />
+  <link rel="alternate" hreflang="de" href="https://heshamelshamy.github.io/" />
+  <link rel="alternate" hreflang="en" href="https://heshamelshamy.github.io/" />
+  <link rel="alternate" hreflang="x-default" href="https://heshamelshamy.github.io/" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://heshamelshamy.github.io/" />
+  <meta property="og:title" content="Hesham Elshamy — Bauingenieur (M.Sc.) · BIM-Modellierer Infrastruktur" />
+  <meta property="og:description" content="BIM-gestützte Straßen- und Entwässerungsplanung für Verkehrsinfrastruktur, Leitungsanlagen und koordinierte technische Planungsunterlagen." />
+  <meta property="og:image" content="https://heshamelshamy.github.io/images/bim-project.webp" />
+  <meta property="og:image:alt" content="Abstract BIM infrastructure visualization" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hesham Elshamy — Bauingenieur (M.Sc.) · BIM-Modellierer Infrastruktur" />
+  <meta name="twitter:description" content="BIM-gestützte Straßen- und Entwässerungsplanung für Verkehrsinfrastruktur, Leitungsanlagen und koordinierte technische Planungsunterlagen." />
+  <meta name="twitter:image" content="https://heshamelshamy.github.io/images/bim-project.webp" />
+  <script>
+    (() => {
+      const root = document.documentElement;
+      try {
+        const savedLanguage = localStorage.getItem('portfolio-lang');
+        const language = savedLanguage === 'en' ? 'en' : 'de';
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = savedTheme === 'dark' || (!savedTheme && prefersDark) ? 'dark' : 'light';
+        root.lang = language;
+        root.classList.remove('lang-de', 'lang-en');
+        root.classList.add(`lang-${language}`);
+        root.dataset.theme = theme;
+        root.style.colorScheme = theme;
+      } catch {
+        root.classList.add('lang-de');
+      }
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hesham Elshamy",
+    "jobTitle": "Civil Engineer (M.Sc.) — BIM Modeler for Infrastructure",
+    "description": "Civil Engineer (M.Sc.) focused on BIM-based road and drainage design for infrastructure projects.",
+    "url": "https://heshamelshamy.github.io/",
+    "sameAs": ["https://www.linkedin.com/in/heshamelshamy/", "https://github.com/heshamelshamy/heshamelshamy.github.io"],
+    "knowsAbout": ["BIM modeling", "road design", "drainage design", "IFC data exchange", "Civil 3D", "VESTRA INFRAVISION"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content / Zum Inhalt</a>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">Hesham Elshamy<small data-lang="de">Bauingenieur (M.Sc.) · BIM-Modellierer Infrastruktur · Straßen- und Entwässerungsplanung</small><small data-lang="en">Civil Engineer (M.Sc.) · BIM Modeler Infrastructure · Road & Drainage Design</small></div>
+      <nav class="nav-links" aria-label="Primary navigation / Hauptnavigation">
+        <a href="index.html" data-lang="de">Startseite</a>
+        <a href="index.html" data-lang="en">Home</a>
+        <a href="leistungen.html" data-lang="de">Leistungen</a>
+        <a href="leistungen.html" data-lang="en">Services</a>
+        <a href="projekte.html" data-lang="de">Projektbeispiele</a>
+        <a href="projekte.html" data-lang="en">Project Examples</a>
+        <a href="kontakt.html" data-lang="de">Kontakt</a>
+        <a href="kontakt.html" data-lang="en">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="chip" id="langToggle" aria-pressed="false" aria-label="Toggle language">DE / EN</button>
+        <button class="icon-btn" id="themeToggle" aria-pressed="false" aria-label="Toggle color theme">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero-cinematic" aria-label="BIM infrastructure visualization">
+      <div class="hero-tech-grid" aria-hidden="true"></div>
+      <div class="container hero-stage">
+        <div class="hero-copy">
+          <div class="eyebrow" data-lang="de">BIM · Verkehrsanlagen · Entwässerung</div>
+          <div class="eyebrow" data-lang="en">BIM · Transport infrastructure · Drainage</div>
+          <h1 data-lang="de">BIM-gestützte Straßen- und Entwässerungsplanung</h1>
+          <h1 data-lang="en">BIM-Based Road and Drainage Design</h1>
+          <p class="lead" data-lang="de">Modellbasierte Planung und Koordination für Verkehrswege, Entwässerungsanlagen und Leitungsinfrastruktur – von der Bestandsmodellierung bis zur Planabgabe.</p>
+          <p class="lead" data-lang="en">Model-based planning and coordination for transport infrastructure, drainage systems, and utilities — from existing-condition modeling through drawing production.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="leistungen.html" data-lang="de">Leistungen ansehen</a>
+            <a class="btn btn-primary" href="leistungen.html" data-lang="en">View Services</a>
+            <a class="btn btn-secondary" href="projekte.html" data-lang="de">Projektbeispiele ansehen</a>
+            <a class="btn btn-secondary" href="projekte.html" data-lang="en">View Project Examples</a>
+          </div>
+          <div class="hero-footer-row">
+            <div class="hero-signals" aria-label="Technical focus">
+              <span class="hero-signal">ISO 19650</span>
+              <span class="hero-signal" data-lang="de">HOAI LPH 2–5</span>
+              <span class="hero-signal" data-lang="en">HOAI phases 2–5</span>
+              <span class="hero-signal">VESTRA · Civil 3D</span>
+            </div>
+            <button id="motionToggle" class="motion-toggle" type="button" data-motion="playing" aria-pressed="false">
+              <span data-lang="de" data-motion-label="playing">Bewegung anhalten</span>
+              <span data-lang="en" data-motion-label="playing">Pause motion</span>
+              <span data-lang="de" data-motion-label="paused">Bewegung fortsetzen</span>
+              <span data-lang="en" data-motion-label="paused">Resume motion</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="split" style="align-items:end;margin-bottom:18px;">
+          <div>
+            <div class="eyebrow" data-lang="de">Beruflicher Hintergrund</div>
+            <div class="eyebrow" data-lang="en">Professional background</div>
+            <h2 data-lang="de">Erfahrung im deutschen Planungskontext</h2>
+            <h2 data-lang="en">Experience in the German planning context</h2>
+          </div>
+          <p class="muted" data-lang="de" style="margin:0;">Straßenplanung, Entwässerung, BIM-Koordination und technische Planungsunterlagen.</p>
+          <p class="muted" data-lang="en" style="margin:0;">Road design, drainage, BIM coordination, and technical planning deliverables.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card box">
+            <h3 data-lang="de">BIM Modeler / Projektingenieur</h3>
+            <h3 data-lang="en">BIM Modeler / Project Engineer</h3>
+            <p class="muted"><strong>Bramey.Bünermann Ingenieure GmbH</strong><br>10/2023 – heute</p>
+            <p data-lang="de">BIM-Modellierung von Verkehrs- und Entwässerungsanlagen, Koordination von Planungsständen sowie Bearbeitung technischer Unterlagen.</p>
+            <p data-lang="en">BIM modeling of transport and drainage infrastructure, coordination of planning stages, and preparation of technical deliverables.</p>
+          </article>
+          <article class="card box">
+            <h3 data-lang="de">Projektingenieur Straßenplanung</h3>
+            <h3 data-lang="en">Road Design Project Engineer</h3>
+            <p class="muted"><strong>Autobahn GmbH des Bundes · NL Westfalen, Außenstelle Hagen</strong><br>04/2023 – 10/2023</p>
+            <p data-lang="de">Mitarbeit an Straßenplanungen und der Erstellung koordinierter Planunterlagen im Umfeld der Bundesautobahnen.</p>
+            <p data-lang="en">Support for road-design projects and coordinated planning documentation in the federal motorway context.</p>
+          </article>
+          <article class="card box">
+            <h3 data-lang="de">Werkstudent</h3>
+            <h3 data-lang="en">Working Student</h3>
+            <p class="muted"><strong>Brilon Bondzio Weiser GmbH</strong><br>10/2021 – 04/2023</p>
+            <p data-lang="de">Unterstützung bei Verkehrsanlagenplanung, Mengenermittlung, Planunterlagen und projektbezogener Datenbearbeitung.</p>
+            <p data-lang="en">Support in transport infrastructure design, quantity take-offs, planning documents, and project-related data work.</p>
+          </article>
+          <article class="card box">
+            <h3 data-lang="de">Werkstudent – Ausschreibung und Bestandsaufnahmen</h3>
+            <h3 data-lang="en">Working Student – Tender Documents and Surveys</h3>
+            <p class="muted"><strong>PORR Oevermann GmbH, Münster</strong><br>10/2021 – 03/2022</p>
+            <p data-lang="de">Auswertung von Ausschreibungs- und Planunterlagen, Massenermittlung mit RIB Civil sowie Unterstützung bei Aufmaß- und Bestandsarbeiten.</p>
+            <p data-lang="en">Review of tender and planning documents, quantity take-offs with RIB Civil, and support for measurement and existing-condition surveys.</p>
+          </article>
+          <article class="card box">
+            <h3 data-lang="de">Weitere Berufsstationen im Straßenbau</h3>
+            <h3 data-lang="en">Earlier Road-Engineering Experience</h3>
+            <p class="muted"><strong>ECG Engineering Consultants Group und weitere Ingenieurunternehmen</strong><br>Ägypten · 2016 – 2018</p>
+            <p data-lang="de">Straßen- und Verkehrsplanung für Erschließungs- und Infrastrukturprojekte in Ägypten und Saudi-Arabien, ergänzt durch Tätigkeiten als AutoCAD-Trainer und Bauleiter.</p>
+            <p data-lang="en">Road and traffic planning for access and infrastructure projects in Egypt and Saudi Arabia, complemented by work as an AutoCAD trainer and road-construction site manager.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="split">
+          <div>
+            <div class="eyebrow" data-lang="de">Ausbildung</div>
+            <div class="eyebrow" data-lang="en">Education</div>
+            <h2 data-lang="de">Akademischer Hintergrund und Infrastrukturfokus</h2>
+            <h2 data-lang="en">Academic background and infrastructure focus</h2>
+            <p data-lang="de">Masterstudium an der Universität Duisburg-Essen mit Schwerpunkt Infrastruktur und Umwelt. Die Masterarbeit behandelte den Entwurf einer P+R-Anlage in Essen-Werden.</p>
+            <p data-lang="en">Master's degree at the University of Duisburg-Essen with a focus on infrastructure and environment. The master's thesis addressed the design of a park-and-ride facility in Essen-Werden.</p>
+          </div>
+          <div class="grid-2">
+            <article class="stat">
+              <strong>M.Sc. Bauingenieurwesen</strong>
+              <p class="muted">Universität Duisburg-Essen<br>10/2021 – 03/2023 · Note 1,3<br>Deutschlandstipendium</p>
+            </article>
+            <article class="stat">
+              <strong>B.Sc. Bauingenieurwesen</strong>
+              <p class="muted">Kafrelshikh Universität<br>10/2011 – 07/2016 · Note 2,2<br>Honor Degree</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split">
+        <div>
+          <h2 data-lang="de">BIM-Qualitätsmanagement mit Orientierung an ISO 19650</h2>
+          <h2 data-lang="en">BIM Quality Management Aligned with ISO 19650 Principles</h2>
+          <p data-lang="de">Die BIM-Planung orientiert sich an strukturierten Informationsprozessen, klaren Verantwortlichkeiten und nachvollziehbaren Datenständen nach den Grundsätzen der ISO 19650. Dies unterstützt präzise Koordination und sichere Datenverwaltung.</p>
+          <p data-lang="en">The BIM approach follows structured information processes, clear responsibilities, and traceable data states in line with the principles of ISO 19650. This supports precise coordination and secure data management.</p>
+        </div>
+        <figure class="media-frame">
+          <img src="images/bim-project-hero.webp" alt="Technical BIM visualization of a road and bridge project" width="1280" height="720" loading="lazy" decoding="async">
+          <figcaption>
+            <span data-lang="de">BIM-Modellierung von Straßen-, Brücken-, Entwässerungs- und Versorgungsanlagen.</span>
+            <span data-lang="en">BIM modeling of road, bridge, drainage, and utility infrastructure.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;">
+      <div>
+        <div class="brand" style="font-size:1rem;">Hesham Elshamy</div>
+        <div class="muted" data-lang="de">Bauingenieur (M.Sc.) für Straßenplanung, Entwässerung und BIM-Modellierung.</div>
+        <div class="muted" data-lang="en">Civil Engineer (M.Sc.) for road design, drainage, and BIM modeling.</div>
+        <div class="footer-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutzerklärung / Privacy Policy</a><a href="https://www.linkedin.com/in/heshamelshamy/" target="_blank" rel="noopener">LinkedIn</a></div>
+      </div>
+      <div class="muted">© 2026</div>
+    </div>
+  </footer>
+
+  <script src="site.js" defer></script>
+</body>
+</html>

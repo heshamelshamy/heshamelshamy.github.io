@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="preload" as="image" href="images/bim-project.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="images/bim-project-hero.webp" fetchpriority="high" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#f5f3ef" />
   <script>
@@ -81,7 +81,7 @@
 
     /* Original video-led hero treatment: image-based for a lightweight first load, with optional motion controls. */
     .hero-cinematic{position:relative;isolation:isolate;min-height:clamp(520px,67vw,710px);padding:0;overflow:hidden;background:#061a20;color:#fff;display:flex;align-items:stretch}
-    .hero-cinematic::before{content:"";position:absolute;inset:-5%;z-index:-3;background:url("images/bim-project.webp") center/cover no-repeat;transform:scale(1.04);animation:heroDrift 18s cubic-bezier(.23,1,.32,1) infinite alternate;will-change:transform}
+    .hero-cinematic::before{content:"";position:absolute;inset:-5%;z-index:-3;background:url("images/bim-project-hero.webp") center/cover no-repeat;transform:scale(1.04);animation:heroDrift 18s cubic-bezier(.23,1,.32,1) infinite alternate;will-change:transform}
     .hero-cinematic::after{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(3,15,20,.96) 0%,rgba(3,15,20,.8) 37%,rgba(3,15,20,.36) 66%,rgba(3,15,20,.24) 100%),linear-gradient(0deg,rgba(3,15,20,.54),transparent 46%)}
     .hero-tech-grid{position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.22;background-image:linear-gradient(rgba(117,230,220,.2) 1px,transparent 1px),linear-gradient(90deg,rgba(117,230,220,.2) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(90deg,transparent,black 42%,transparent 92%)}
     .hero-stage{width:100%;display:flex;align-items:flex-end;padding-top:clamp(74px,10vw,126px);padding-bottom:clamp(46px,7vw,86px)}
@@ -256,7 +256,7 @@
         <p data-lang="en">The BIM approach follows structured information processes, clear responsibilities, and traceable data states in line with the principles of ISO 19650. This supports precise, coordinated, and transparently documented planning deliverables.</p>
       </div>
       <figure class="media-frame">
-        <img src="images/bim-project.webp" alt="Technical BIM visualization of a road and bridge project" width="2560" height="1440" loading="lazy" decoding="async">
+        <img src="images/bim-project-hero.webp" alt="Technical BIM visualization of a road and bridge project" width="1280" height="720" loading="lazy" decoding="async">
         <figcaption>
           <span data-lang="de">BIM-Modellierung von Straßen-, Brücken-, Entwässerungs- und Versorgungsanlagen.</span>
           <span data-lang="en">BIM modeling of road, bridge, drainage, and utility infrastructure.</span>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projekte | Hesham Elshamy Bauingenieur (M.Sc.)</title>
+  <title>Projektbeispiele | Hesham Elshamy Bauingenieur (M.Sc.)</title>
   <meta name="description" content="Technical project portfolio of Hesham Elshamy covering BIM, road design, Autobahn Rast- und Tankanlagen, Kolonnenparken, VESTRA, RStO 12, and German planning standards." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,24 +27,24 @@
     .btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px} .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:14px;font-weight:600;border:1px solid transparent} .btn-primary{background:var(--primary);color:var(--white)} .btn-secondary{border-color:var(--line)}
     section{padding:42px 0} .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px} .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px} .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
     .tag-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px} .tag{padding:8px 12px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);font-size:.9rem}
-    .project-media{margin:20px 0 22px;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:var(--surface-2);box-shadow:var(--shadow)} .project-media img{width:100%;aspect-ratio:16/7;object-fit:cover} .project-media figcaption{padding:12px 16px;font-size:.9rem;color:var(--muted)}
+.project-specs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:22px}.project-specs p{margin:0;padding:14px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line)}.project-note{margin:20px 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
     .split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center} .stat{padding:18px;border-radius:16px;background:var(--surface-2);border:1px solid var(--line)}
-    .footer{padding:34px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
-    [data-lang]{display:none} html.lang-de [data-lang="de"],html.lang-en [data-lang="en"]{display:block} html.lang-de [data-lang-inline="de"],html.lang-en [data-lang-inline="en"]{display:inline}
-    @media (max-width:980px){.nav{flex-direction:column;align-items:flex-start;padding:14px 0} .hero-grid,.split,.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+    .footer{padding:34px 0 56px;border-top:1px solid var(--line);color:var(--muted)} .footer-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;font-size:.9rem}.footer-links a{text-decoration:underline;text-underline-offset:3px}
+    [data-lang],[data-lang-inline]{display:none} html.lang-de [data-lang="de"],html.lang-en [data-lang="en"]{display:block} html.lang-de [data-lang-inline="de"],html.lang-en [data-lang-inline="en"]{display:inline}
+    @media (max-width:980px){.nav{flex-direction:column;align-items:flex-start;padding:14px 0} .hero-grid,.split,.grid-2,.grid-3,.grid-4,.project-specs{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
 <header class="topbar">
   <div class="container nav">
-    <div class="brand">Hesham Elshamy<small>Bauingenieur (M.Sc.) | BIM-Koordinator Infrastruktur | Straßen- und Entwässerungsplanung</small></div>
+    <div class="brand">Hesham Elshamy<small data-lang="de">Bauingenieur (M.Sc.) · BIM-Modellierer Infrastruktur · Straßen- und Entwässerungsplanung</small><small data-lang="en">Civil Engineer (M.Sc.) · BIM Modeler for Infrastructure · Road and Drainage Design</small></div>
     <nav class="nav-links">
       <a href="index.html" data-lang="de">Startseite</a>
       <a href="index.html" data-lang="en">Home</a>
       <a href="leistungen.html" data-lang="de">Leistungen</a>
       <a href="leistungen.html" data-lang="en">Services</a>
-      <a href="projekte.html" data-lang="de">Projekte</a>
-      <a href="projekte.html" data-lang="en">Projects</a>
+      <a href="projekte.html" data-lang="de">Projektbeispiele</a>
+      <a href="projekte.html" data-lang="en">Project Examples</a>
       <a href="kontakt.html" data-lang="de">Kontakt</a>
       <a href="kontakt.html" data-lang="en">Contact</a>
     </nav>
@@ -59,148 +59,152 @@
   <section class="hero">
     <div class="container">
       <div class="card box">
-        <div class="eyebrow" data-lang="de">Projekte</div>
-        <div class="eyebrow" data-lang="en">Projects</div>
-        <h1 data-lang="de">Geplante und entworfene Projekte für Verkehrsanlagen, Entwässerung und BIM-Planung</h1>
-        <h1 data-lang="en">Designed and planned projects in transport infrastructure, drainage, and BIM planning</h1>
-        <p class="lead" data-lang="de">Eine strukturierte Auswahl geplanter und entworfener Projekte aus den Bereichen Verkehrsanlagen, Entwässerung und BIM-Planung. Die Projekte werden als eigenständige technische Fallbeispiele mit Fokus auf Aufgaben, Regelwerke, Software und Planungsphase dargestellt.</p>
-        <p class="lead" data-lang="en">A structured selection of designed and planned projects in transport infrastructure, drainage, and BIM planning. Each project is presented as an individual technical case study focused on scope, standards, software, and planning phase.</p>
+        <div class="eyebrow" data-lang="de">Projektbeispiele</div>
+        <div class="eyebrow" data-lang="en">Project Examples</div>
+        <h1 data-lang="de">Projektbeispiele für Verkehrsanlagen, Entwässerung und BIM-Planung</h1>
+        <h1 data-lang="en">Project Examples in Transport Infrastructure, Drainage, and BIM Planning</h1>
+        <p class="lead" data-lang="de">Anonymisierte technische Fallbeispiele aus Verkehrsanlagen-, Entwässerungs- und BIM-Planung. Jedes Beispiel strukturiert Projekttyp, Rolle, Leistungsumfang, Software und Planungsphase ohne vertrauliche Projekt- oder Kundendaten.</p>
+        <p class="lead" data-lang="en">Anonymized technical case studies from transport infrastructure, drainage, and BIM planning. Each example presents the project type, role, scope, software, and design phase without confidential project or client data.</p>
       </div>
     </div>
   </section>
 
-  <!-- Project 01: BIM Project -->
   <section>
     <div class="container">
       <article class="card box">
-        <div class="eyebrow" data-lang="de">Projekt 01 · BIM-Modellierung (LPH 2–3)</div>
-        <div class="eyebrow" data-lang="en">Project 01 · BIM Modeling (Service Phases 2–3)</div>
-        <h2 data-lang="de">Neugestaltung einer innerstädtischen Hauptverkehrsstraße mit Anbindung an eine Bundesstraße</h2>
-        <h2 data-lang="en">Redesign of an Urban Main Road Connecting to a Federal Highway</h2>
-        <p class="muted" style="margin-bottom:12px;">
-          <strong data-lang="de">Rolle:</strong><span data-lang="de"> BIM-Modellierer / Projektingenieur Straßen- und Entwässerungsplanung, HOAI-Leistungsphasen 2–3 (BIM-Modellierung nach LOD 100–300)</span>
-          <strong data-lang="en">Role:</strong><span data-lang="en"> BIM Modeler / Project Engineer for Road and Drainage Design, HOAI Service Phases 2–3 (BIM modeling per LOD 100–300)</span>
-        </p>
-        <figure class="project-media">
-          <img src="images/bim-project.webp" alt="BIM visualization of a road and bridge infrastructure project" loading="lazy">
-          <figcaption>
-            <span data-lang="de">BIM-Koordination von Verkehrsanlagen, Ingenieurbauwerk, Entwässerung und Versorgungsleitungen.</span>
-            <span data-lang="en">BIM coordination of transport infrastructure, an engineering structure, drainage, and utility lines.</span>
-          </figcaption>
-        </figure>
-        <p data-lang="de">Neugestaltung einer ca. 1 km langen, beidseitig angebauten Verkehrsstraße mit hoher Verkehrsbedeutung, die die Innenstadt an eine Bundesstraße anbindet, einschließlich eines Ingenieurbauwerks (Brücke über eine Gleisanlage). Schwerpunkte: Umgestaltung des Querschnitts zur Integration von Schutzstreifen unter Beibehaltung möglichst Parkstände; Anpassung der Gradiente unter Berücksichtigung zahlreicher Zwangspunkte durch die beidseitige Bebauung; koordinierte Umplanung der Zufahrten; Planung von vier barrierefreien Bushaltestellen inkl. Fahrgastunterstand; vollständige Neuplanung der Entwässerung (Mischwasserkanal) sowie Umverlegung der Versorgungsleitungen; durchgängige BIM-Modellierung bis LPH 3.</p>
-        <p data-lang="en">Redesign of an approximately 1 km long main traffic road, built up with adjacent buildings on both sides, with high traffic significance, connecting the city center to a federal highway, including an engineering structure (bridge over a railway track section). Key scope: cross-section redesign integrating marked cycle lanes while preserving parking; vertical alignment adjustment constrained by numerous fixed points (Zwangspunkte) due to adjacent buildings; coordinated redesign of access points (Zufahrten); design of four barrier-free bus stops with shelters; complete redesign of the drainage system (combined sewer) and relocation of utility lines; end-to-end BIM modeling through Service Phase 3.</p>
-        <div class="tag-list"><span class="tag">BIM (LOD 100-300)</span><span class="tag">HOAI LPH 2-3</span><span class="tag" data-lang="de">Brückenbauwerk</span><span class="tag" data-lang="en">Bridge Structure</span><span class="tag" data-lang="de">Entwässerungsplanung</span><span class="tag" data-lang="en">Drainage Design</span><span class="tag" data-lang="de">Schutzstreifen</span><span class="tag" data-lang="en">Cycle Lanes</span></div>
+        <div class="eyebrow" data-lang="de">Projekt 01 · BIM-Infrastrukturplanung</div>
+        <div class="eyebrow" data-lang="en">Project 01 · BIM infrastructure planning</div>
+        <h2 data-lang="de">BIM-basierte Neugestaltung einer innerstädtischen Hauptverkehrsstraße</h2>
+        <h2 data-lang="en">BIM-based redesign of an urban main traffic road</h2>
+        <div class="project-specs">
+          <p><strong data-lang-inline="de">Projekttyp: </strong><strong data-lang-inline="en">Project type: </strong><span data-lang-inline="de">Hauptverkehrsstraße mit Brückenbauwerk, Bushaltestellen und Leitungskoordination</span><span data-lang-inline="en">Main traffic road with bridge structure, bus stops, and utility coordination</span></p>
+          <p><strong data-lang-inline="de">Meine Rolle: </strong><strong data-lang-inline="en">My role: </strong><span data-lang-inline="de">BIM-Modellierer / Projektingenieur Straßen- und Entwässerungsplanung</span><span data-lang-inline="en">BIM Modeler / Project Engineer for road and drainage design</span></p>
+          <p><strong data-lang-inline="de">Leistungsumfang: </strong><strong data-lang-inline="en">Scope of work: </strong><span data-lang-inline="de">Verkehrsanlagen, Entwässerung, Versorgungsleitungen, barrierefreie Haltestellen und koordinierte Planableitung.</span><span data-lang-inline="en">Transport infrastructure, drainage, utilities, accessible bus stops, and coordinated drawing production.</span></p>
+          <p><strong data-lang-inline="de">Software: </strong><strong data-lang-inline="en">Software: </strong><span data-lang-inline="de">Civil 3D, InfraWorks, Navisworks, BricsCAD</span><span data-lang-inline="en">Civil 3D, InfraWorks, Navisworks, BricsCAD</span></p>
+          <p><strong data-lang-inline="de">Planungsphase oder Ergebnis: </strong><strong data-lang-inline="en">Design phase or outcome: </strong><span data-lang-inline="de">HOAI LPH 2–3, BIM-Modellierung im Detaillierungsgrad LOD 100–300.</span><span data-lang-inline="en">HOAI Service Phases 2–3, BIM modeling at LOD 100–300.</span></p>
+        </div>
+        <p class="project-note" data-lang="de">Projektbeispiel – vertrauliche Projekt- und Kundendaten wurden nicht veröffentlicht.</p>
+        <p class="project-note" data-lang="en">Project example — confidential project and client data have not been published.</p>
       </article>
     </div>
   </section>
 
-  <!-- Project 02: Rast- und Tankanlage Hessen -->
   <section>
     <div class="container">
       <article class="card box">
-        <div class="eyebrow" data-lang="de">Projekt 02 · Vorplanung / LPH 2</div>
-        <div class="eyebrow" data-lang="en">Project 02 · Preliminary design / Service Phase 2</div>
-        <h2 data-lang="de">Erweiterung einer Rast- und Tankanlage an einer Autobahn in Hessen</h2>
-        <h2 data-lang="en">Extension of an Autobahn Rest and Service Area in Hesse</h2>
-        <p class="muted" style="margin-bottom:12px;">
-          <strong data-lang="de">Rolle:</strong><span data-lang="de"> Mitarbeit in der Vorplanung und Variantenuntersuchung gemäß LPH 2</span>
-          <strong data-lang="en">Role:</strong><span data-lang="en"> Contribution to preliminary design and option analysis during Service Phase 2</span>
-        </p>
-        <figure class="project-media">
-          <img src="images/rest-stop-kolonnenparken.webp" alt="Conceptual aerial visualization of an Autobahn rest area with convoy parking for trucks" loading="lazy">
-          <figcaption>
-            <span data-lang="de">Konzeptionelle Visualisierung einer Rast- und Tankanlage mit Kolonnenparken; keine maßstäbliche Ausführungszeichnung.</span>
-            <span data-lang="en">Conceptual visualization of a rest area with convoy parking; not a scaled construction drawing.</span>
-          </figcaption>
-        </figure>
-        <p data-lang="de">Erweiterung einer bestehenden Rast- und Tankanlage an einer Autobahn in Hessen. Ziel war die deutliche Erhöhung der LKW-Kapazität: Auf dem GST-Streifen wurden 70 zusätzliche LKW-Stellmöglichkeiten vorgesehen und die regulären LKW-Stellplätze um 64 erhöht. Die Bus-Stellplätze wurden erhalten. Zusätzlich wurde die PKW-Kapazität um ca. 20 Stellplätze erweitert; ergänzt wurden 3 Stellplätze für PKW mit Anhänger beziehungsweise Wohnmobile, 10 neue Stellplätze mit Ladeinfrastruktur für Elektrofahrzeuge sowie 12 Stellplätze für Mitarbeitende der Raststätte.</p>
-        <p data-lang="en">Extension of an existing Autobahn rest and service area in Hesse. The objective was to significantly increase heavy-goods-vehicle capacity: 70 additional truck parking positions were planned on the GST strip and the regular truck parking capacity was increased by 64 spaces. Existing bus parking was maintained. In addition, passenger-car capacity was increased by approximately 20 spaces, with 3 spaces for cars with trailers or motorhomes, 10 new spaces with electric-vehicle charging infrastructure, and 12 staff parking spaces for the service area.</p>
-        <p data-lang="de">Im Rahmen der LPH 2 wurden drei Varianten untersucht: konventionelle Erweiterung, Erweiterung mittels Kolonnenparken und Erweiterung mittels Kompaktparken. Der Variantenvergleich erfolgte unter Berücksichtigung der Kosten und des Verkehrsablaufs. Aufgrund der besseren Wirtschaftlichkeit und der günstigeren Verkehrsführung wurde die Variante „Erweiterung mittels Kolonnenparken“ als Vorzugsvariante ausgewählt und der Entwurf auf dieser Grundlage entwickelt.</p>
-        <p data-lang="en">During Service Phase 2, three options were assessed: conventional extension, extension using convoy parking, and extension using compact parking. The comparison considered cost and traffic flow. The convoy-parking option was selected as the preferred solution because it offered the best economic balance and the most suitable traffic circulation; the design was developed on this basis.</p>
-        <div class="tag-list"><span class="tag">Autobahn</span><span class="tag">Hessen</span><span class="tag">Rast- und Tankanlage</span><span class="tag">LPH 2 / Vorplanung</span><span class="tag">Kolonnenparken</span><span class="tag">Kompaktparken</span><span class="tag" data-lang="de">70 LKW auf GST-Streifen</span><span class="tag" data-lang="en">70 trucks on GST strip</span><span class="tag" data-lang="de">64 LKW-Stellplätze</span><span class="tag" data-lang="en">64 truck spaces</span><span class="tag" data-lang="de">10 E-Ladeplätze</span><span class="tag" data-lang="en">10 EV charging spaces</span><span class="tag" data-lang="de">12 Mitarbeiterstellplätze</span><span class="tag" data-lang="en">12 staff spaces</span></div>
+        <div class="eyebrow" data-lang="de">Projekt 02 · Rast- und Tankanlage</div>
+        <div class="eyebrow" data-lang="en">Project 02 · Rest and service area</div>
+        <h2 data-lang="de">Erweiterung einer Autobahn-Rast- und Tankanlage</h2>
+        <h2 data-lang="en">Extension of an Autobahn rest and service area</h2>
+        <div class="project-specs">
+          <p><strong data-lang-inline="de">Projekttyp: </strong><strong data-lang-inline="en">Project type: </strong><span data-lang-inline="de">Erweiterung einer bestehenden Rast- und Tankanlage mit LKW-, PKW-, Bus- und E-Ladeplätzen</span><span data-lang-inline="en">Extension of an existing rest and service area with truck, car, bus, and EV charging spaces</span></p>
+          <p><strong data-lang-inline="de">Meine Rolle: </strong><strong data-lang-inline="en">My role: </strong><span data-lang-inline="de">Mitarbeit in der Vorplanung und Variantenuntersuchung</span><span data-lang-inline="en">Support in preliminary design and option analysis</span></p>
+          <p><strong data-lang-inline="de">Leistungsumfang: </strong><strong data-lang-inline="en">Scope of work: </strong><span data-lang-inline="de">Kapazitätserweiterung, Variantenvergleich von konventioneller Erweiterung, Kolonnenparken und Kompaktparken sowie Prüfung des Verkehrsablaufs.</span><span data-lang-inline="en">Capacity extension, comparison of conventional, convoy, and compact parking options, and review of traffic circulation.</span></p>
+          <p><strong data-lang-inline="de">Software: </strong><strong data-lang-inline="en">Software: </strong><span data-lang-inline="de">VESTRA INFRAVISION, AutoCAD, BricsCAD</span><span data-lang-inline="en">VESTRA INFRAVISION, AutoCAD, BricsCAD</span></p>
+          <p><strong data-lang-inline="de">Planungsphase oder Ergebnis: </strong><strong data-lang-inline="en">Design phase or outcome: </strong><span data-lang-inline="de">HOAI LPH 2; Kolonnenparken als bevorzugte Variante.</span><span data-lang-inline="en">HOAI Service Phase 2; convoy parking selected as the preferred option.</span></p>
+        </div>
+        <p class="project-note" data-lang="de">Projektbeispiel – vertrauliche Projekt- und Kundendaten wurden nicht veröffentlicht.</p>
+        <p class="project-note" data-lang="en">Project example — confidential project and client data have not been published.</p>
       </article>
     </div>
   </section>
 
-  <!-- Project 03: Industrial Area -->
   <section>
     <div class="container">
       <article class="card box">
-        <div class="eyebrow" data-lang="de">Projekt 03 · Ausführungsplanung</div>
-        <div class="eyebrow" data-lang="en">Project 03 · Detailed design</div>
-        <h2 data-lang="de">Komplexe Erschließungs- und Straßenplanung im Industriegebiet</h2>
-        <h2 data-lang="en">Complex industrial-area access and road design</h2>
-        <figure class="project-media">
-          <img src="images/industrial-roundabout.webp" alt="Aerial view of an industrial-area roundabout designed for heavy vehicles" loading="lazy">
-          <figcaption>
-            <span data-lang="de">Erschließungsplanung im Industriegebiet mit Kreisverkehr und Schwerlastverkehr.</span>
-            <span data-lang="en">Industrial-area access planning with a roundabout and heavy-vehicle traffic.</span>
-          </figcaption>
-        </figure>
-        <p data-lang="de">Komplexes Infrastrukturprojekt mit zwei Bahnübergängen und der erforderlichen Erweiterung eines bestehenden Kreisverkehrs in einem Industriegebiet. Der Entwurf umfasste zwei Kreisverkehre und zwei Knotenpunkte. Die Bemessung erfolgte nach RStO 12. Zusätzlich wurde eine Schleppkurvensimulation für Schwerlastfahrzeuge durchgeführt. Die Straße wurde mit VESTRA entworfen und die Mengen wurden ebenfalls mit VESTRA ermittelt. Die Bearbeitung und Übergabe erfolgte in der Leistungsphase Ausführungsplanung.</p>
-        <p data-lang="en">Complex infrastructure project with two level crossings and the required expansion of an existing roundabout in an industrial area. The design included two roundabouts and two junctions. Pavement design followed RStO 12. A swept-path simulation for heavy vehicles was also carried out. The road was designed and quantities were determined using VESTRA. The project was delivered at the detailed-design stage (Ausführungsplanung).</p>
-        <div class="tag-list"><span class="tag">VESTRA</span><span class="tag">RStO 12</span><span class="tag" data-lang="de">2 Bahnübergänge</span><span class="tag" data-lang="en">2 level crossings</span><span class="tag" data-lang="de">2 Kreisverkehre</span><span class="tag" data-lang="en">2 roundabouts</span><span class="tag" data-lang="de">2 Knotenpunkte</span><span class="tag" data-lang="en">2 junctions</span><span class="tag" data-lang="de">Schleppkurvensimulation Schwerlastverkehr</span><span class="tag" data-lang="en">Heavy-vehicle swept-path simulation</span><span class="tag" data-lang="de">Ausführungsplanung</span><span class="tag" data-lang="en">Detailed design</span></div>
+        <div class="eyebrow" data-lang="de">Projekt 03 · Industriegebiet und Verkehrsanlagen</div>
+        <div class="eyebrow" data-lang="en">Project 03 · Industrial area and transport infrastructure</div>
+        <h2 data-lang="de">Komplexe Erschließungs- und Straßenplanung mit Bahnübergängen</h2>
+        <h2 data-lang="en">Complex access and road design with level crossings</h2>
+        <div class="project-specs">
+          <p><strong data-lang-inline="de">Projekttyp: </strong><strong data-lang-inline="en">Project type: </strong><span data-lang-inline="de">Erschließungsplanung im Industriegebiet mit zwei Bahnübergängen, Kreisverkehren und Knotenpunkten</span><span data-lang-inline="en">Industrial-area access planning with two level crossings, roundabouts, and junctions</span></p>
+          <p><strong data-lang-inline="de">Meine Rolle: </strong><strong data-lang-inline="en">My role: </strong><span data-lang-inline="de">Projektingenieur Straßenplanung in der Ausführungsplanung</span><span data-lang-inline="en">Road Design Project Engineer during detailed design</span></p>
+          <p><strong data-lang-inline="de">Leistungsumfang: </strong><strong data-lang-inline="en">Scope of work: </strong><span data-lang-inline="de">Straßenentwurf, Erweiterung eines bestehenden Kreisverkehrs, Schwerlastverkehrsprüfung und Mengenermittlung.</span><span data-lang-inline="en">Road design, extension of an existing roundabout, heavy-vehicle swept-path checks, and quantity take-offs.</span></p>
+          <p><strong data-lang-inline="de">Software: </strong><strong data-lang-inline="en">Software: </strong><span data-lang-inline="de">VESTRA INFRAVISION, Schleppkurvensimulation</span><span data-lang-inline="en">VESTRA INFRAVISION, swept-path simulation</span></p>
+          <p><strong data-lang-inline="de">Planungsphase oder Ergebnis: </strong><strong data-lang-inline="en">Design phase or outcome: </strong><span data-lang-inline="de">RStO 12; Übergabe in der Ausführungsplanung.</span><span data-lang-inline="en">RStO 12; delivered at detailed-design stage.</span></p>
+        </div>
+        <p class="project-note" data-lang="de">Projektbeispiel – vertrauliche Projekt- und Kundendaten wurden nicht veröffentlicht.</p>
+        <p class="project-note" data-lang="en">Project example — confidential project and client data have not been published.</p>
       </article>
     </div>
   </section>
 
-  <!-- Project 04: Saudi Arabia -->
   <section>
     <div class="container">
       <article class="card box">
         <div class="eyebrow" data-lang="de">Projekt 04 · Erschließungsplanung</div>
         <div class="eyebrow" data-lang="en">Project 04 · Access planning</div>
-        <h2 data-lang="de">44 Grundstücke in Saudi-Arabien</h2>
-        <h2 data-lang="en">44 plots in Saudi Arabia</h2>
-        <p data-lang="de">Großmaßstäbliche Entwicklung mit rund 70.000.000 m² Gesamtfläche. Fokus auf Topographie, Cut-and-Fill-Zonen, Grading und digitale Modellierung von Erschließungsflächen.</p>
-        <p data-lang="en">Large-scale development with around 70,000,000 m² total area, focused on topography, cut-and-fill zones, grading, and digital modeling of development surfaces.</p>
-        <div class="tag-list"><span class="tag">Civil 3D</span><span class="tag">Surfer</span><span class="tag">Topography</span></div>
+        <h2 data-lang="de">Großmaßstäbliche Flächenerschließung und digitale Geländemodelle</h2>
+        <h2 data-lang="en">Large-scale land development and digital terrain modeling</h2>
+        <div class="project-specs">
+          <p><strong data-lang-inline="de">Projekttyp: </strong><strong data-lang-inline="en">Project type: </strong><span data-lang-inline="de">Erschließungs- und Infrastrukturplanung für eine großmaßstäbliche Flächenentwicklung</span><span data-lang-inline="en">Access and infrastructure planning for a large-scale land development</span></p>
+          <p><strong data-lang-inline="de">Meine Rolle: </strong><strong data-lang-inline="en">My role: </strong><span data-lang-inline="de">Mitarbeit in Straßenplanung, Geländemodellierung und Flächenentwurf</span><span data-lang-inline="en">Support in road design, terrain modeling, and development-surface design</span></p>
+          <p><strong data-lang-inline="de">Leistungsumfang: </strong><strong data-lang-inline="en">Scope of work: </strong><span data-lang-inline="de">Topographie, Cut-and-Fill-Bereiche, Grading und Modellierung von Erschließungsflächen.</span><span data-lang-inline="en">Topography, cut-and-fill areas, grading, and modeling of access surfaces.</span></p>
+          <p><strong data-lang-inline="de">Software: </strong><strong data-lang-inline="en">Software: </strong><span data-lang-inline="de">Civil 3D, Surfer, AutoCAD</span><span data-lang-inline="en">Civil 3D, Surfer, AutoCAD</span></p>
+          <p><strong data-lang-inline="de">Planungsphase oder Ergebnis: </strong><strong data-lang-inline="en">Design phase or outcome: </strong><span data-lang-inline="de">Digitale Planungsgrundlagen und Entwurfsunterlagen für die weitere Projektbearbeitung.</span><span data-lang-inline="en">Digital planning bases and design documents for further project development.</span></p>
+        </div>
+        <p class="project-note" data-lang="de">Projektbeispiel – vertrauliche Projekt- und Kundendaten wurden nicht veröffentlicht.</p>
+        <p class="project-note" data-lang="en">Project example — confidential project and client data have not been published.</p>
       </article>
     </div>
   </section>
 
-  <!-- Project 05: Sheikh Zayed -->
   <section>
     <div class="container">
       <article class="card box">
         <div class="eyebrow" data-lang="de">Projekt 05 · Stadtentwicklung</div>
         <div class="eyebrow" data-lang="en">Project 05 · Urban development</div>
-        <h2 data-lang="de">Sheikh Zayed City</h2>
-        <h2 data-lang="en">Sheikh Zayed City</h2>
-        <p data-lang="de">Mitwirkung an Entwicklungsvision und strategischem Plan für rund 9.800 Feddans mit Fokus auf Landnutzung, Erschließung und Verkehrsstruktur.</p>
-        <p data-lang="en">Worked on a development vision and strategic plan for around 9,800 feddans with focus on land use, access planning, and transport structure.</p>
-        <div class="tag-list"><span class="tag">Urban planning</span><span class="tag">Access</span><span class="tag">Strategy</span></div>
+        <h2 data-lang="de">Strategische Stadtentwicklungs- und Erschließungsplanung</h2>
+        <h2 data-lang="en">Strategic urban development and access planning</h2>
+        <div class="project-specs">
+          <p><strong data-lang-inline="de">Projekttyp: </strong><strong data-lang-inline="en">Project type: </strong><span data-lang-inline="de">Städtebauliche Entwicklungsplanung mit Landnutzung, Erschließung und Verkehrsstruktur</span><span data-lang-inline="en">Urban development planning with land use, access, and transport structure</span></p>
+          <p><strong data-lang-inline="de">Meine Rolle: </strong><strong data-lang-inline="en">My role: </strong><span data-lang-inline="de">Mitarbeit an Entwicklungsvision und strategischer Planung</span><span data-lang-inline="en">Support for the development vision and strategic planning</span></p>
+          <p><strong data-lang-inline="de">Leistungsumfang: </strong><strong data-lang-inline="en">Scope of work: </strong><span data-lang-inline="de">Bearbeitung von Nutzungs-, Erschließungs- und verkehrsbezogenen Planungsgrundlagen.</span><span data-lang-inline="en">Preparation of land-use, access, and transport-related planning bases.</span></p>
+          <p><strong data-lang-inline="de">Software: </strong><strong data-lang-inline="en">Software: </strong><span data-lang-inline="de">AutoCAD, GIS-basierte Planungsgrundlagen</span><span data-lang-inline="en">AutoCAD, GIS-based planning materials</span></p>
+          <p><strong data-lang-inline="de">Planungsphase oder Ergebnis: </strong><strong data-lang-inline="en">Design phase or outcome: </strong><span data-lang-inline="de">Strategische Planungsunterlagen für die weitere städtebauliche Entwicklung.</span><span data-lang-inline="en">Strategic planning documents for further urban development.</span></p>
+        </div>
+        <p class="project-note" data-lang="de">Projektbeispiel – vertrauliche Projekt- und Kundendaten wurden nicht veröffentlicht.</p>
+        <p class="project-note" data-lang="en">Project example — confidential project and client data have not been published.</p>
       </article>
     </div>
   </section>
 
-  <!-- Project 06: El-Mostaqbal -->
   <section>
     <div class="container">
       <article class="card box">
         <div class="eyebrow" data-lang="de">Projekt 06 · Straßenplanung</div>
         <div class="eyebrow" data-lang="en">Project 06 · Road design</div>
-        <h2 data-lang="de">El-Mostaqbal City Phase 1</h2>
-        <h2 data-lang="en">El-Mostaqbal City Phase 1</h2>
-        <p data-lang="de">Planerische Unterstützung für 16 Straßen mit Schwerpunkt auf Achsen, Querschnitten und technischen Zeichnungen.</p>
-        <p data-lang="en">Road design support for 16 roads with focus on alignments, cross sections, and technical drawings.</p>
-        <div class="tag-list"><span class="tag">Civil 3D</span><span class="tag">CAD 2D</span><span class="tag">Cross sections</span></div>
+        <h2 data-lang="de">Entwurf eines innerstädtischen Straßenabschnitts</h2>
+        <h2 data-lang="en">Design of an urban road corridor</h2>
+        <div class="project-specs">
+          <p><strong data-lang-inline="de">Projekttyp: </strong><strong data-lang-inline="en">Project type: </strong><span data-lang-inline="de">Straßenplanung mit mehreren Achsen, Profilen und Querschnitten</span><span data-lang-inline="en">Road design with multiple alignments, profiles, and cross sections</span></p>
+          <p><strong data-lang-inline="de">Meine Rolle: </strong><strong data-lang-inline="en">My role: </strong><span data-lang-inline="de">Mitarbeit in der Straßen- und Verkehrsanlagenplanung</span><span data-lang-inline="en">Support in road and transport infrastructure design</span></p>
+          <p><strong data-lang-inline="de">Leistungsumfang: </strong><strong data-lang-inline="en">Scope of work: </strong><span data-lang-inline="de">Bearbeitung von Achsen, Längsprofilen, Querprofilen und technischen Zeichnungen.</span><span data-lang-inline="en">Development of alignments, longitudinal profiles, cross sections, and technical drawings.</span></p>
+          <p><strong data-lang-inline="de">Software: </strong><strong data-lang-inline="en">Software: </strong><span data-lang-inline="de">Civil 3D, 2D-CAD</span><span data-lang-inline="en">Civil 3D, 2D CAD</span></p>
+          <p><strong data-lang-inline="de">Planungsphase oder Ergebnis: </strong><strong data-lang-inline="en">Design phase or outcome: </strong><span data-lang-inline="de">Koordinierte Planungs- und Zeichnungsunterlagen für die weitere Bearbeitung.</span><span data-lang-inline="en">Coordinated planning and drawing documents for further development.</span></p>
+        </div>
+        <p class="project-note" data-lang="de">Projektbeispiel – vertrauliche Projekt- und Kundendaten wurden nicht veröffentlicht.</p>
+        <p class="project-note" data-lang="en">Project example — confidential project and client data have not been published.</p>
       </article>
     </div>
   </section>
 
-  <!-- Project 07: Line 10 Road -->
   <section>
     <div class="container">
       <article class="card box">
         <div class="eyebrow" data-lang="de">Projekt 07 · Detailplanung</div>
-        <div class="eyebrow" data-lang="en">Project 07 · Detailed planning</div>
-        <h2 data-lang="de">Line 10 Road in Obour City</h2>
-        <h2 data-lang="en">Line 10 Road in Obour City</h2>
-        <p data-lang="de">Werkstattzeichnungen für ein Straßenprojekt mit ca. 10 km Länge einschließlich zeichnerischer Detailausarbeitung.</p>
-        <p data-lang="en">Shop drawings for a road project of around 10 km including detailed drawing development.</p>
-        <div class="tag-list"><span class="tag">Shop drawings</span><span class="tag">CAD 2D</span><span class="tag">Civil 3D</span></div>
+        <div class="eyebrow" data-lang="en">Project 07 · Detailed design</div>
+        <h2 data-lang="de">Detailplanung und Werkstattzeichnungen für eine Erschließungsstraße</h2>
+        <h2 data-lang="en">Detailed design and shop drawings for an access road</h2>
+        <div class="project-specs">
+          <p><strong data-lang-inline="de">Projekttyp: </strong><strong data-lang-inline="en">Project type: </strong><span data-lang-inline="de">Straßenprojekt mit Schwerpunkt auf zeichnerischer Detailausarbeitung</span><span data-lang-inline="en">Road project focused on detailed drawing development</span></p>
+          <p><strong data-lang-inline="de">Meine Rolle: </strong><strong data-lang-inline="en">My role: </strong><span data-lang-inline="de">Projektingenieur Straßenplanung / CAD-Bearbeitung</span><span data-lang-inline="en">Road Design Project Engineer / CAD production</span></p>
+          <p><strong data-lang-inline="de">Leistungsumfang: </strong><strong data-lang-inline="en">Scope of work: </strong><span data-lang-inline="de">Erstellung von Werkstatt- und Detailzeichnungen sowie technische Ausarbeitung der Straßenplanung.</span><span data-lang-inline="en">Preparation of shop and detailed drawings and technical development of the road design.</span></p>
+          <p><strong data-lang-inline="de">Software: </strong><strong data-lang-inline="en">Software: </strong><span data-lang-inline="de">AutoCAD, Civil 3D, 2D-CAD</span><span data-lang-inline="en">AutoCAD, Civil 3D, 2D CAD</span></p>
+          <p><strong data-lang-inline="de">Planungsphase oder Ergebnis: </strong><strong data-lang-inline="en">Design phase or outcome: </strong><span data-lang-inline="de">Technische Detail- und Werkstattzeichnungen für die weitere Projektabwicklung.</span><span data-lang-inline="en">Technical detailed and shop drawings for further project delivery.</span></p>
+        </div>
+        <p class="project-note" data-lang="de">Projektbeispiel – vertrauliche Projekt- und Kundendaten wurden nicht veröffentlicht.</p>
+        <p class="project-note" data-lang="en">Project example — confidential project and client data have not been published.</p>
       </article>
     </div>
   </section>
@@ -210,8 +214,9 @@
   <div class="container" style="display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;">
     <div>
       <div class="brand" style="font-size:1rem;">Hesham Elshamy</div>
-      <div class="muted" data-lang="de">Portfolio im Stil moderner deutscher Ingenieurbüros mit klaren Inhaltsseiten.</div>
-      <div class="muted" data-lang="en">Portfolio inspired by modern German engineering office websites with clear standalone pages.</div>
+      <div class="muted" data-lang="de">Bauingenieur (M.Sc.) für Straßenplanung, Entwässerung und BIM-Modellierung.</div>
+      <div class="muted" data-lang="en">Civil Engineer (M.Sc.) for road design, drainage, and BIM modeling.</div>
+      <div class="footer-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutzerklärung / Privacy Policy</a><a href="https://www.linkedin.com/in/heshamelshamy/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/heshamelshamy/heshamelshamy.github.io" target="_blank" rel="noopener noreferrer">GitHub</a><a href="kontakt.html">Kontakt / Contact</a></div>
     </div>
     <div class="muted">© 2026</div>
   </div>

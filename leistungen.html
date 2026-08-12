@@ -26,13 +26,10 @@
     h1{margin:0 0 16px;font-size:clamp(2rem,5vw,4rem);line-height:1.03;letter-spacing:-.04em} h2{margin:0 0 10px;font-size:clamp(1.5rem,3vw,2.4rem);letter-spacing:-.03em} h3{margin:0 0 10px;font-size:1.08rem}
     .lead,.muted,p{color:var(--muted)} .lead{font-size:1.08rem;max-width:65ch} .eyebrow{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:color-mix(in srgb,var(--primary) 10%,var(--surface));color:var(--primary);font-size:.9rem;font-weight:600;margin-bottom:18px}
     .btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px} .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:14px;font-weight:600;border:1px solid transparent} .btn-primary{background:var(--primary);color:var(--white)} .btn-secondary{border-color:var(--line)}
-    section{padding:42px 0} .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px} .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px} .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    section{padding:42px 0} .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px} .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px} .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px} .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{height:100%;display:flex;flex-direction:column}.tech-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:color-mix(in srgb,var(--primary) 12%,var(--surface));color:var(--primary);margin-bottom:18px}.tech-icon svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.service-card .tag-list{margin-top:auto;padding-top:12px}@media (max-width:980px){.service-grid{grid-template-columns:1fr 1fr}}
     .tag-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px} .tag{padding:8px 12px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);font-size:.9rem}
-    .image-slot{margin-top:18px;border:1.5px dashed var(--line);border-radius:16px;min-height:250px;background:linear-gradient(180deg,color-mix(in srgb,var(--surface-2) 70%,transparent),transparent),var(--surface-2);display:grid;place-items:center;text-align:center;padding:24px;color:var(--muted)}
-    .image-slot.tall{min-height:360px} .image-slot small{display:block;margin-top:8px}
-    .media-frame{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:var(--surface-2);box-shadow:var(--shadow)} .media-frame img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10} .media-frame figcaption{padding:12px 16px;font-size:.9rem;color:var(--muted)}
     .split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center} .stat{padding:18px;border-radius:16px;background:var(--surface-2);border:1px solid var(--line)}
-    .footer{padding:34px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
+    .footer{padding:34px 0 56px;border-top:1px solid var(--line);color:var(--muted)} .footer-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;font-size:.9rem}.footer-links a{text-decoration:underline;text-underline-offset:3px}
     [data-lang]{display:none} html.lang-de [data-lang="de"],html.lang-en [data-lang="en"]{display:block} html.lang-de [data-lang-inline="de"],html.lang-en [data-lang-inline="en"]{display:inline}
     @media (max-width:980px){.nav{flex-direction:column;align-items:flex-start;padding:14px 0} .hero-grid,.split,.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
   </style>
@@ -40,14 +37,14 @@
 <body>
 <header class="topbar">
   <div class="container nav">
-    <div class="brand">Hesham Elshamy<small>Bauingenieur (M.Sc.) | BIM-Koordinator Infrastruktur | Straßen- und Entwässerungsplanung</small></div>
+    <div class="brand">Hesham Elshamy<small data-lang="de">Bauingenieur (M.Sc.) · BIM-Modellierer Infrastruktur · Straßen- und Entwässerungsplanung</small><small data-lang="en">Civil Engineer (M.Sc.) · BIM Modeler for Infrastructure · Road and Drainage Design</small></div>
     <nav class="nav-links">
       <a href="index.html" data-lang="de">Startseite</a>
       <a href="index.html" data-lang="en">Home</a>
       <a href="leistungen.html" data-lang="de">Leistungen</a>
       <a href="leistungen.html" data-lang="en">Services</a>
-      <a href="projekte.html" data-lang="de">Projekte</a>
-      <a href="projekte.html" data-lang="en">Projects</a>
+      <a href="projekte.html" data-lang="de">Projektbeispiele</a>
+      <a href="projekte.html" data-lang="en">Project Examples</a>
       <a href="kontakt.html" data-lang="de">Kontakt</a>
       <a href="kontakt.html" data-lang="en">Contact</a>
     </nav>
@@ -73,59 +70,66 @@
   </section>
 
   <section>
-    <div class="container grid-2">
-      <div class="card box">
-        <h2 data-lang="de">BIM-Modellierung</h2>
-        <h2 data-lang="en">BIM modeling</h2>
-        <p data-lang="de">Modellierung von Verkehrs-, Entwässerungs- und Leitungsanlagen für koordinierte Planungsstände und saubere Datenstrukturen.</p>
-        <p data-lang="en">Modeling of transport, drainage, and utility systems for coordinated planning stages and clean data structures.</p>
-        <div class="tag-list"><span class="tag">Civil 3D</span><span class="tag">Navisworks</span><span class="tag">InfraWorks</span><span class="tag">Dynamo</span></div>
+    <div class="container">
+      <div class="service-grid">
+        <article class="card box service-card">
+          <div class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 17.5 12 5l8 12.5H4Z"/><path d="M8 17.5v2M12 17.5v2M16 17.5v2M7 14h10"/></svg></div>
+          <h2 data-lang="de">BIM-Modellierung Infrastruktur</h2><h2 data-lang="en">BIM Modeling for Infrastructure</h2>
+          <p data-lang="de">Erstellung und Fortschreibung digitaler Fachmodelle für Verkehrs-, Entwässerungs- und Leitungsanlagen. Die Modellstände unterstützen die fachübergreifende Planung und Planableitung.</p>
+          <p data-lang="en">Development and updating of discipline models for transport, drainage, and utility infrastructure. Model stages support multidisciplinary design and drawing production.</p>
+          <div class="tag-list"><span class="tag">Civil 3D</span><span class="tag">Navisworks</span><span class="tag">InfraWorks</span></div>
+        </article>
+        <article class="card box service-card">
+          <div class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 18h18M5 18l3-8 4 4 3-7 4 11"/><path d="M8 10h.01M15 7h.01"/></svg></div>
+          <h2 data-lang="de">Straßen- und Verkehrsflächenplanung</h2><h2 data-lang="en">Road and Traffic Area Design</h2>
+          <p data-lang="de">Bearbeitung von Achsen, Längs- und Querprofilen, Querschnitten und Verkehrsflächen für Straßen, Knotenpunkte und Nebenanlagen.</p>
+          <p data-lang="en">Design support for alignments, profiles, cross sections, and traffic areas for roads, junctions, and associated facilities.</p>
+          <div class="tag-list"><span class="tag">VESTRA INFRAVISION</span><span class="tag">Civil 3D</span><span class="tag">AutoTURN</span></div>
+        </article>
+        <article class="card box service-card">
+          <div class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 5v14M16 5v14M4 9h16M4 15h16"/></svg></div>
+          <h2 data-lang="de">Entwässerungs- und Leitungsplanung</h2><h2 data-lang="en">Drainage and Utility Design</h2>
+          <p data-lang="de">Planung und Koordination von Entwässerungs- und Versorgungsleitungen im Bestand und in der Neuplanung unter Berücksichtigung der REwS.</p>
+          <p data-lang="en">Design and coordination of existing and proposed drainage and utility networks with consideration of REwS requirements.</p>
+          <div class="tag-list"><span class="tag">REwS</span><span class="tag">RIB iTWO Civil</span><span class="tag">INFRASIGN</span></div>
+        </article>
+        <article class="card box service-card">
+          <div class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19 12 4l8 15H4Z"/><path d="m7 16 10-5M9 12l6 4M12 4v15"/></svg></div>
+          <h2 data-lang="de">Digitale Geländemodelle und Bestandsmodellierung</h2><h2 data-lang="en">Digital Terrain Models and Existing-Condition Modeling</h2>
+          <p data-lang="de">Aufbereitung von Bestandsdaten, Geländemodellen und Planungsgrundlagen als Basis für belastbare Infrastrukturentwürfe.</p>
+          <p data-lang="en">Preparation of existing-condition data, terrain models, and planning bases for robust infrastructure design.</p>
+          <div class="tag-list"><span class="tag">Civil 3D</span><span class="tag">InfraWorks</span><span class="tag">AutoCAD Map 3D</span></div>
+        </article>
+        <article class="card box service-card">
+          <div class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="m8 12 2.5 2.5L16 9M8 7h8M8 17h5"/></svg></div>
+          <h2 data-lang="de">IFC-Datenaustausch und Modellprüfung</h2><h2 data-lang="en">IFC Data Exchange and Model Checking</h2>
+          <p data-lang="de">Unterstützung beim strukturierten IFC-Datenaustausch sowie bei Modell- und Kollisionsprüfungen im Rahmen koordinierter BIM-Prozesse.</p>
+          <p data-lang="en">Support for structured IFC data exchange as well as model and clash checks within coordinated BIM processes.</p>
+          <div class="tag-list"><span class="tag">IFC</span><span class="tag">Navisworks</span><span class="tag">Kollisionsprüfung</span></div>
+        </article>
+        <article class="card box service-card">
+          <div class="tech-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/><path d="m15 16 2 2 3-3"/></svg></div>
+          <h2 data-lang="de">Planableitung und Mengenermittlung</h2><h2 data-lang="en">Drawing Production and Quantity Take-Off</h2>
+          <p data-lang="de">Ableitung technischer Planunterlagen, Mengen- und Massenermittlung sowie Unterstützung bei Ausschreibungs- und Ausführungsunterlagen.</p>
+          <p data-lang="en">Production of technical drawings, quantity and mass take-offs, and support for tender and detailed-design documentation.</p>
+          <div class="tag-list"><span class="tag">RIB Civil</span><span class="tag">VESTRA</span><span class="tag">AutoCAD</span></div>
+        </article>
       </div>
-      <figure class="media-frame">
-        <img src="images/bim-project.webp" alt="Technical BIM visualization of a road and bridge project" loading="lazy">
-        <figcaption>
-          <span data-lang="de">Koordinierte BIM-Modellierung von Verkehrsanlagen, Entwässerung und Versorgungsleitungen.</span>
-          <span data-lang="en">Coordinated BIM modeling of transport, drainage, and utility infrastructure.</span>
-        </figcaption>
-      </figure>
     </div>
   </section>
 
   <section>
-    <div class="container grid-2">
-      <figure class="media-frame">
-        <img src="images/urban-road.webp" alt="Sustainable urban road with cycle lanes and bus stop" loading="lazy">
-        <figcaption>
-          <span data-lang="de">Straßenraumgestaltung mit Schutzstreifen, Grünflächen und barrierefreien Haltestellen.</span>
-          <span data-lang="en">Street design with cycle lanes, green areas, and accessible bus stops.</span>
-        </figcaption>
-      </figure>
-      <div class="card box">
-        <h2 data-lang="de">Straßen- und Entwurfsplanung</h2>
-        <h2 data-lang="en">Road and design planning</h2>
-        <p data-lang="de">Unterstützung bei Achsen, Profilen, Querschnitten, Ausführungsdetails und projektbezogenen Zeichnungsunterlagen.</p>
-        <p data-lang="en">Support with alignments, profiles, cross sections, execution details, and project-specific drawing packages.</p>
-        <div class="tag-list"><span class="tag">VESTRA INFRAVISION</span><span class="tag">Civil 3D</span><span class="tag">BricsCAD</span><span class="tag">AutoCAD</span><span class="tag">AutoTURN</span></div>
+    <div class="container split">
+      <div>
+        <div class="eyebrow" data-lang="de">Arbeitsgrundlagen</div>
+        <div class="eyebrow" data-lang="en">Working methods</div>
+        <h2 data-lang="de">Software &amp; Arbeitsgrundlagen</h2>
+        <h2 data-lang="en">Software &amp; Working Methods</h2>
       </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container grid-2">
-      <div class="card box">
-        <h2 data-lang="de">Entwässerung und technische Unterlagen</h2>
-        <h2 data-lang="en">Drainage and technical deliverables</h2>
-        <p data-lang="de">Bearbeitung von Entwässerungsplanung, Leitungskoordination sowie technischen Unterlagen wie Markierung, Beschilderung und Grunderwerb.</p>
-        <p data-lang="en">Support in drainage planning, utility coordination, and technical documents such as markings, signage, and land acquisition plans.</p>
-        <div class="tag-list"><span class="tag">REwS</span><span class="tag">RIB iTWO Civil</span><span class="tag">INFRASIGN</span><span class="tag">Dokumentation</span></div>
-      </div>
-      <div class="image-slot">
-        <div>
-          <strong data-lang="de">Bildplatz Entwässerung / Unterlagen</strong>
-          <strong data-lang="en">Drainage / documentation image slot</strong>
-          <small data-lang="de">Hier kann später ein Planblatt oder Detailbild eingefügt werden.</small>
-          <small data-lang="en">You can later insert a plan sheet or technical detail image here.</small>
-        </div>
+      <div>
+        <p data-lang="de">Autodesk Civil 3D, AKG VESTRA INFRAVISION, Navisworks, InfraWorks, AutoCAD, BricsCAD und IFC. Erfahrung in der modellbasierten Straßen- und Entwässerungsplanung im Infrastrukturkontext sowie in den HOAI-Leistungsphasen 2 bis 5.</p>
+        <p data-lang="en">Autodesk Civil 3D, AKG VESTRA INFRAVISION, Navisworks, InfraWorks, AutoCAD, BricsCAD, and IFC. Experience in model-based road and drainage design for infrastructure projects, including HOAI Service Phases 2 to 5.</p>
+        <div class="tag-list"><span class="tag">HOAI LPH 2–5</span><span class="tag">IFC</span><span class="tag">Civil 3D</span><span class="tag">VESTRA INFRAVISION</span><span class="tag">Navisworks</span><span class="tag">BricsCAD</span></div>
       </div>
     </div>
   </section>
@@ -135,8 +139,9 @@
   <div class="container" style="display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;">
     <div>
       <div class="brand" style="font-size:1rem;">Hesham Elshamy</div>
-      <div class="muted" data-lang="de">Portfolio im Stil moderner deutscher Ingenieurbüros mit klaren Inhaltsseiten.</div>
-      <div class="muted" data-lang="en">Portfolio inspired by modern German engineering office websites with clear standalone pages.</div>
+      <div class="muted" data-lang="de">Bauingenieur (M.Sc.) für Straßenplanung, Entwässerung und BIM-Modellierung.</div>
+      <div class="muted" data-lang="en">Civil Engineer (M.Sc.) for road design, drainage, and BIM modeling.</div>
+      <div class="footer-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutzerklärung / Privacy Policy</a><a href="https://www.linkedin.com/in/heshamelshamy/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/heshamelshamy/heshamelshamy.github.io" target="_blank" rel="noopener noreferrer">GitHub</a><a href="kontakt.html">Kontakt / Contact</a></div>
     </div>
     <div class="muted">© 2026</div>
   </div>

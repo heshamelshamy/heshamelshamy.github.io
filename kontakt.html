@@ -6,6 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt | Hesham Elshamy Bauingenieur (M.Sc.)</title>
   <meta name="description" content="Kontakt zu Hesham Elshamy, Bauingenieur (M.Sc.) und BIM-Modellierer für Infrastruktur, Straßen- und Entwässerungsplanung." />
+  <link rel="canonical" href="https://heshamelshamy.github.io/kontakt.html" />
+  <link rel="alternate" hreflang="de" href="https://heshamelshamy.github.io/kontakt.html" />
+  <link rel="alternate" hreflang="en" href="https://heshamelshamy.github.io/kontakt.html" />
+  <link rel="alternate" hreflang="x-default" href="https://heshamelshamy.github.io/kontakt.html" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://heshamelshamy.github.io/kontakt.html" />
+  <meta property="og:title" content="Kontakt — Hesham Elshamy Bauingenieur (M.Sc.)" />
+  <meta property="og:description" content="Kontakt für projektbezogene und remote Zusammenarbeit in BIM, Straßenplanung und Entwässerungsplanung." />
+  <meta property="og:image" content="https://heshamelshamy.github.io/images/bim-project.webp" />
+  <meta property="og:image:alt" content="Abstract BIM infrastructure visualization" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kontakt — Hesham Elshamy Bauingenieur (M.Sc.)" />
+  <meta name="twitter:description" content="Kontakt für projektbezogene und remote Zusammenarbeit in BIM, Straßenplanung und Entwässerungsplanung." />
+  <meta name="twitter:image" content="https://heshamelshamy.github.io/images/bim-project.webp" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -34,13 +51,27 @@
     .footer{padding:34px 0 56px;border-top:1px solid var(--line);color:var(--muted)} .footer-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;font-size:.9rem}.footer-links a{text-decoration:underline;text-underline-offset:3px}
     [data-lang],[data-lang-inline]{display:none!important} html.lang-de [data-lang="de"],html.lang-en [data-lang="en"]{display:block!important} html.lang-de [data-lang-inline="de"],html.lang-en [data-lang-inline="en"]{display:inline!important}
     @media (max-width:980px){.nav{flex-direction:column;align-items:flex-start;padding:14px 0} .hero-grid,.split,.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+      .skip-link{position:absolute;left:-9999px;top:auto;z-index:9999;padding:10px 14px;border-radius:8px;background:var(--text);color:var(--bg)}.skip-link:focus{left:16px;top:16px}.skip-link:focus-visible{outline:3px solid var(--accent);outline-offset:3px}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hesham Elshamy",
+    "jobTitle": "Civil Engineer (M.Sc.) — BIM Modeler for Infrastructure",
+    "description": "Civil Engineer (M.Sc.) focused on BIM-based road and drainage design for infrastructure projects.",
+    "url": "https://heshamelshamy.github.io/",
+    "sameAs": ["https://www.linkedin.com/in/heshamelshamy/", "https://github.com/heshamelshamy/heshamelshamy.github.io"],
+    "knowsAbout": ["BIM modeling", "road design", "drainage design", "IFC data exchange", "Civil 3D", "VESTRA INFRAVISION"]
+  }
+</script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content / Zum Inhalt</a>
 <header class="topbar">
   <div class="container nav">
     <div class="brand">Hesham Elshamy<small data-lang="de">Bauingenieur (M.Sc.) · BIM-Modellierer Infrastruktur · Straßen- und Entwässerungsplanung</small><small data-lang="en">Civil Engineer (M.Sc.) · BIM Modeler for Infrastructure · Road and Drainage Design</small></div>
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="Primary navigation / Hauptnavigation">
       <a href="index.html" data-lang="de">Startseite</a>
       <a href="index.html" data-lang="en">Home</a>
       <a href="leistungen.html" data-lang="de">Leistungen</a>
@@ -51,13 +82,13 @@
       <a href="kontakt.html" data-lang="en">Contact</a>
     </nav>
     <div class="nav-actions">
-      <button class="chip" id="langToggle">DE / EN</button>
-      <button class="icon-btn" id="themeToggle">◐</button>
+      <button class="chip" id="langToggle" aria-pressed="false" aria-label="Toggle language">DE / EN</button>
+      <button class="icon-btn" id="themeToggle" aria-pressed="false" aria-label="Toggle color theme">◐</button>
     </div>
   </div>
 </header>
 
-<main>
+<main id="main">
   <section class="hero">
     <div class="container split">
       <div class="card box">
@@ -94,35 +125,38 @@
 </footer>
 <script>
   const root = document.documentElement;
-  const savedLang = localStorage.getItem('portfolio-lang') || 'de';
   const langToggle = document.getElementById('langToggle');
+  const themeToggle = document.getElementById('themeToggle');
 
   function setLanguage(lang) {
     const activeLang = lang === 'en' ? 'en' : 'de';
+    root.lang = activeLang;
     root.classList.toggle('lang-de', activeLang === 'de');
     root.classList.toggle('lang-en', activeLang === 'en');
     localStorage.setItem('portfolio-lang', activeLang);
     if (langToggle) {
       langToggle.textContent = activeLang === 'de' ? 'EN' : 'DE';
+      langToggle.setAttribute('aria-pressed', String(activeLang === 'en'));
       langToggle.setAttribute('aria-label', activeLang === 'de' ? 'Switch to English' : 'Auf Deutsch wechseln');
       langToggle.setAttribute('title', activeLang === 'de' ? 'Switch to English' : 'Auf Deutsch wechseln');
     }
   }
 
-  setLanguage(savedLang);
-  if (langToggle) {
-    langToggle.addEventListener('click', () => {
-      setLanguage(root.classList.contains('lang-de') ? 'en' : 'de');
-    });
+  function setTheme(theme) {
+    const activeTheme = theme === 'dark' ? 'dark' : 'light';
+    root.setAttribute('data-theme', activeTheme);
+    localStorage.setItem('portfolio-theme', activeTheme);
+    if (themeToggle) themeToggle.setAttribute('aria-pressed', String(activeTheme === 'dark'));
   }
 
-  const themeToggle = document.getElementById('themeToggle');
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', nextTheme);
-    });
-  }
+  const savedLang = localStorage.getItem('portfolio-lang') || 'de';
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const savedTheme = localStorage.getItem('portfolio-theme') || (prefersDark ? 'dark' : 'light');
+  setLanguage(savedLang);
+  setTheme(savedTheme);
+
+  if (langToggle) langToggle.addEventListener('click', () => setLanguage(root.lang === 'de' ? 'en' : 'de'));
+  if (themeToggle) themeToggle.addEventListener('click', () => setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
 </script>
 </body>
 </html>

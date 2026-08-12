@@ -1,6 +1,8 @@
 /* دفتر مسارات البنية التحتية: طبقة موحّدة فوق الصفحات الحالية، تعطي الأولوية للغلاف التحريري، تدرّج المشاريع، وإيقاع هندسي واضح. */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap');
 
+html.lang-de [data-lang="en"],html.lang-de [data-lang-inline="en"],html.lang-en [data-lang="de"],html.lang-en [data-lang-inline="de"]{display:none!important}
+
 :root{--coal:#10191c;--coal-2:#172529;--ink:#1d292c;--fog:#ece9e1;--paper:#f8f6f0;--paper-2:#e5e2d8;--bridge:#58d5c9;--bridge-deep:#0b837a;--orange:#ef8f3b;--steel:#77878a;--rule:rgba(16,25,28,.15);--display:'Space Grotesk','DM Sans',sans-serif;--body:'DM Sans',sans-serif;--mono:'IBM Plex Mono',monospace;--max-modern:1320px}
 [data-theme="dark"]{--coal:#071114;--coal-2:#102024;--ink:#e8efec;--fog:#151d20;--paper:#10181b;--paper-2:#182428;--bridge:#70e1d4;--bridge-deep:#70e1d4;--orange:#f1a35d;--steel:#aebdbc;--rule:rgba(232,239,236,.17)}
 html{background:var(--paper)}body{font-family:var(--body);background:var(--paper);color:var(--ink);letter-spacing:-.012em}body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;opacity:.33;background-image:linear-gradient(rgba(16,25,28,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(16,25,28,.035) 1px,transparent 1px);background-size:32px 32px}

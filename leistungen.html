@@ -67,7 +67,7 @@
     .btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px} .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:14px;font-weight:600;border:1px solid transparent} .btn-primary{background:var(--primary);color:var(--white)} .btn-secondary{border-color:var(--line)}
     section{padding:42px 0} .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px} .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px} .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px} .service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:18px}.service-card{height:100%;display:flex;flex-direction:column}.tech-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:color-mix(in srgb,var(--primary) 12%,var(--surface));color:var(--primary);margin-bottom:18px}.tech-icon svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.service-card .tag-list{margin-top:auto;padding-top:12px}
     .tag-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px} .tag{padding:8px 12px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);font-size:.9rem}
-    .split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center} .stat{padding:18px;border-radius:16px;background:var(--surface-2);border:1px solid var(--line)}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center} .stat{padding:18px;border-radius:16px;background:var(--surface-2);border:1px solid var(--line)}.licensed-figure{margin:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface-2)}.licensed-figure img{width:100%;height:auto}.licensed-figure figcaption{padding:11px 14px;border-top:1px solid var(--line);font-size:.78rem;line-height:1.5;color:var(--muted)}.licensed-figure figcaption a{text-decoration:underline;text-underline-offset:3px}
     .footer{padding:34px 0 56px;border-top:1px solid var(--line);color:var(--muted)} .footer-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;font-size:.9rem}.footer-links a{text-decoration:underline;text-underline-offset:3px}
     [data-lang],[data-lang-inline]{display:none!important} html.lang-de [data-lang="de"],html.lang-en [data-lang="en"]{display:block!important} html.lang-de [data-lang-inline="de"],html.lang-en [data-lang-inline="en"]{display:inline!important}
     @media (max-width:980px){.nav{flex-direction:column;align-items:flex-start;padding:14px 0} .hero-grid,.split,.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
@@ -180,12 +180,14 @@
         <div class="eyebrow" data-lang="en">Working methods</div>
         <h2 data-lang="de">Software &amp; Arbeitsgrundlagen</h2>
         <h2 data-lang="en">Software &amp; Working Methods</h2>
-      </div>
-      <div>
         <p data-lang="de">Autodesk Civil 3D, AKG VESTRA INFRAVISION, Navisworks, InfraWorks, AutoCAD, BricsCAD und IFC. Erfahrung in der modellbasierten Straßen- und Entwässerungsplanung im Infrastrukturkontext sowie in den HOAI-Leistungsphasen 2 bis 5.</p>
         <p data-lang="en">Autodesk Civil 3D, AKG VESTRA INFRAVISION, Navisworks, InfraWorks, AutoCAD, BricsCAD, and IFC. Experience in model-based road and drainage design for infrastructure projects, including HOAI Service Phases 2 to 5.</p>
         <div class="tag-list"><span class="tag">HOAI LPH 2–5</span><span class="tag">IFC</span><span class="tag">Civil 3D</span><span class="tag">VESTRA INFRAVISION</span><span class="tag">Navisworks</span><span class="tag">BricsCAD</span></div>
       </div>
+      <figure class="licensed-figure">
+        <img src="images/autobahnkreuz-koeln-nord.webp" alt="" width="960" height="960" loading="lazy" decoding="async">
+        <figcaption><span data-lang="de">Illustratives Referenzbild zur Verkehrsnetz- und Knotenpunktplanung, nicht das dargestellte Portfolio-Projekt: „Aerial view of Autobahnkreuz Köln-Nord“.</span><span data-lang="en">Illustrative reference image for transport-network and junction planning, not the portfolio project shown: “Aerial view of Autobahnkreuz Köln-Nord”.</span> © <a href="https://commons.wikimedia.org/wiki/File:Aerial_view_of_Autobahnkreuz_K%C3%B6ln-Nord.jpg" target="_blank" rel="license noopener noreferrer">El Grafo / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de" target="_blank" rel="license noopener noreferrer">CC BY-SA 3.0</a> · <span data-lang="de">für Web optimiert.</span><span data-lang="en">web-optimized.</span></figcaption>
+      </figure>
     </div>
   </section>
 </main>

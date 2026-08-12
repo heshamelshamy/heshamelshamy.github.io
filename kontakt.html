@@ -77,6 +77,7 @@
 
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
   </style>
+  <link rel="stylesheet" href="site-modern.css?v=2.0.2" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -102,8 +103,8 @@
       <a href="leistungen.html" data-lang="en">Services</a>
       <a href="projekte.html" data-lang="de">Projektbeispiele</a>
       <a href="projekte.html" data-lang="en">Project Examples</a>
-      <a href="kontakt.html" data-lang="de">Kontakt</a>
-      <a href="kontakt.html" data-lang="en">Contact</a>
+      <a class="nav-current" href="kontakt.html" data-lang="de">Kontakt</a>
+      <a class="nav-current" href="kontakt.html" data-lang="en">Contact</a>
     </nav>
     <div class="nav-actions">
       <button class="chip" id="langToggle" aria-pressed="false" aria-label="Toggle language">DE / EN</button>
@@ -112,8 +113,8 @@
   </div>
 </header>
 
-<main id="main">
-  <section class="hero">
+<main id="main" class="contact-ledger">
+  <section class="hero contact-hero">
     <div class="container split">
       <div class="card box">
         <div class="eyebrow" data-lang="de">Kontakt</div>

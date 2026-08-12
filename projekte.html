@@ -75,6 +75,7 @@
 
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
   </style>
+  <link rel="stylesheet" href="site-modern.css?v=2.0.2" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -98,8 +99,8 @@
       <a href="index.html" data-lang="en">Home</a>
       <a href="leistungen.html" data-lang="de">Leistungen</a>
       <a href="leistungen.html" data-lang="en">Services</a>
-      <a href="projekte.html" data-lang="de">Projektbeispiele</a>
-      <a href="projekte.html" data-lang="en">Project Examples</a>
+      <a class="nav-current" href="projekte.html" data-lang="de">Projektbeispiele</a>
+      <a class="nav-current" href="projekte.html" data-lang="en">Project Examples</a>
       <a href="kontakt.html" data-lang="de">Kontakt</a>
       <a href="kontakt.html" data-lang="en">Contact</a>
     </nav>
@@ -110,8 +111,8 @@
   </div>
 </header>
 
-<main id="main">
-  <section class="hero">
+<main id="main" class="project-ledger">
+  <section class="hero project-hero">
     <div class="container">
       <div class="card box">
         <div class="eyebrow" data-lang="de">Projektbeispiele</div>
@@ -131,6 +132,10 @@
         <div class="eyebrow" data-lang="en">Project 01 · BIM infrastructure planning</div>
         <h2 data-lang="de">BIM-basierte Neugestaltung einer innerstädtischen Hauptverkehrsstraße</h2>
         <h2 data-lang="en">BIM-based redesign of an urban main traffic road</h2>
+        <figure class="featured-bim">
+          <img src="images/bim-project-hero.webp" alt="" width="1280" height="720" loading="lazy" decoding="async">
+          <figcaption><span data-lang="de">Abstrakte BIM-Visualisierung für das anonymisierte Infrastruktur-Fallbeispiel.</span><span data-lang="en">Abstract BIM visualisation for the anonymised infrastructure case study.</span></figcaption>
+        </figure>
         <div class="project-specs">
           <p><strong data-lang-inline="de">Projekttyp: </strong><strong data-lang-inline="en">Project type: </strong><span data-lang-inline="de">Hauptverkehrsstraße mit Brückenbauwerk, Bushaltestellen und Leitungskoordination</span><span data-lang-inline="en">Main traffic road with bridge structure, bus stops, and utility coordination</span></p>
           <p><strong data-lang-inline="de">Meine Rolle: </strong><strong data-lang-inline="en">My role: </strong><span data-lang-inline="de">BIM-Modellierer / Projektingenieur Straßen- und Entwässerungsplanung</span><span data-lang-inline="en">BIM Modeler / Project Engineer for road and drainage design</span></p>

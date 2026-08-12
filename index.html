@@ -100,6 +100,7 @@
     @media(max-width:680px){.hero-cinematic{min-height:600px}.hero-cinematic::after{background:linear-gradient(90deg,rgba(3,15,20,.95),rgba(3,15,20,.68)),linear-gradient(0deg,rgba(3,15,20,.72),transparent 60%)}.hero-stage{padding-top:96px}.hero-cinematic h1{max-width:11ch}.hero-footer-row{align-items:flex-start}.motion-toggle{width:100%;text-align:left}}
     @media (prefers-reduced-motion:reduce){.hero-cinematic::before{animation:none;transform:scale(1.05)}.hero-copy{animation:none}.motion-toggle{display:none}}
   </style>
+  <link rel="stylesheet" href="site-modern.css?v=2.0.2" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -119,8 +120,8 @@
   <div class="container nav">
     <div class="brand">Hesham Elshamy<small data-lang="de">Bauingenieur (M.Sc.) · BIM-Modellierer Infrastruktur · Straßen- und Entwässerungsplanung</small><small data-lang="en">Civil Engineer (M.Sc.) · BIM Modeler for Infrastructure · Road and Drainage Design</small></div>
     <nav class="nav-links" aria-label="Primary navigation / Hauptnavigation">
-      <a href="index.html" data-lang="de">Startseite</a>
-      <a href="index.html" data-lang="en">Home</a>
+      <a class="nav-current" href="index.html" data-lang="de">Startseite</a>
+      <a class="nav-current" href="index.html" data-lang="en">Home</a>
       <a href="leistungen.html" data-lang="de">Leistungen</a>
       <a href="leistungen.html" data-lang="en">Services</a>
       <a href="projekte.html" data-lang="de">Projektbeispiele</a>
@@ -135,7 +136,7 @@
   </div>
 </header>
 
-<main id="main">
+<main id="main" class="portfolio-main home-portfolio">
   <section class="hero hero-cinematic" aria-label="BIM infrastructure visualization">
     <div class="hero-tech-grid" aria-hidden="true"></div>
     <div class="container hero-stage">
@@ -167,6 +168,16 @@
           </button>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="home-proof-band" aria-label="Technical scope">
+    <div class="container">
+      <div class="proof-lead" data-lang="de">Von Modellständen zu belastbaren Planungsunterlagen.</div>
+      <div class="proof-lead" data-lang="en">From model states to dependable planning deliverables.</div>
+      <div class="proof-item"><strong>01 / BIM</strong><span data-lang="de">Modellierung &amp; Koordination</span><span data-lang="en">Modeling &amp; coordination</span></div>
+      <div class="proof-item"><strong>02 / ROAD</strong><span data-lang="de">Verkehrsanlagen &amp; Knotenpunkte</span><span data-lang="en">Roads &amp; junctions</span></div>
+      <div class="proof-item"><strong>03 / WATER</strong><span data-lang="de">Entwässerung &amp; Leitungen</span><span data-lang="en">Drainage &amp; utilities</span></div>
     </div>
   </section>
 

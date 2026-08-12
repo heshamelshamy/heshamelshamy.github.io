@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de" class="lang-de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Seite nicht gefunden | Hesham Elshamy</title>
+  <style>
+    :root{--bg:#f5f3ef;--surface:#fbfaf7;--surface-2:#efebe4;--text:#1f2933;--muted:#5b6672;--line:#d8d2c9;--primary:#0f766e;--accent:#d97706;--white:#fff;--shadow:0 10px 30px rgba(17,24,39,.08)}
+    [data-theme="dark"]{--bg:#111417;--surface:#171b1f;--surface-2:#1d2328;--text:#e7ecef;--muted:#a6b0b8;--line:#2b333a;--primary:#3bb4a9;--accent:#f59e0b;--white:#fff;--shadow:0 14px 34px rgba(0,0,0,.28)}
+    *{box-sizing:border-box}html{min-height:100%}body{min-height:100vh;margin:0;padding:24px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(circle at top right,color-mix(in srgb,var(--primary) 11%,transparent),transparent 35%),var(--bg);color:var(--text);display:grid;place-items:center;line-height:1.6}.wrap{width:min(100%,640px)}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:30px}.brand{font-weight:800;letter-spacing:-.02em}.brand small{display:block;font-size:.78rem;font-weight:500;color:var(--muted)}.actions{display:flex;gap:10px}.chip,.icon-btn{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:999px;padding:10px 14px;font-size:.9rem;cursor:pointer}.icon-btn{width:42px;padding:0}.card{padding:clamp(32px,7vw,64px);background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);text-align:center}.code{display:inline-flex;align-items:center;justify-content:center;width:76px;height:76px;border-radius:22px;background:color-mix(in srgb,var(--primary) 12%,var(--surface));color:var(--primary);font-weight:800;font-size:1.25rem;letter-spacing:.07em;margin-bottom:22px}h1{margin:0 0 12px;font-size:clamp(2rem,7vw,4rem);line-height:1.05;letter-spacing:-.045em}p{max-width:48ch;margin:0 auto 26px;color:var(--muted)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 19px;border-radius:14px;background:var(--primary);color:var(--white);font-weight:700;text-decoration:none}.skip-link{position:absolute;left:-9999px;top:auto}.skip-link:focus{left:16px;top:16px;z-index:999;background:var(--text);color:var(--bg);padding:10px 14px;border-radius:8px}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}[data-lang]{display:none!important}html.lang-de [data-lang="de"],html.lang-en [data-lang="en"]{display:block!important}@media(max-width:520px){body{padding:18px}.top{align-items:flex-start}.brand small{max-width:220px}.card{border-radius:18px}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content / Zum Inhalt</a>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">Hesham Elshamy<small data-lang="de">Bauingenieur (M.Sc.) · BIM-Modellierer Infrastruktur</small><small data-lang="en">Civil Engineer (M.Sc.) · BIM Modeler for Infrastructure</small></div>
+      <div class="actions">
+        <button class="chip" id="langToggle" aria-pressed="false" aria-label="Toggle language">EN</button>
+        <button class="icon-btn" id="themeToggle" aria-pressed="false" aria-label="Toggle color theme">◐</button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="card" aria-labelledby="error-title">
+        <div class="code" aria-hidden="true">404</div>
+        <h1 id="error-title" data-lang="de">Diese Seite wurde nicht gefunden.</h1>
+        <h1 id="error-title-en" data-lang="en">This page could not be found.</h1>
+        <p data-lang="de">Der aufgerufene Link ist möglicherweise veraltet, verschoben oder nicht verfügbar. Über die Startseite gelangen Sie zurück zum Portfolio.</p>
+        <p data-lang="en">The link you followed may be outdated, moved, or unavailable. Use the homepage to return to the portfolio.</p>
+        <a class="btn" href="index.html" data-lang="de">Zur Startseite</a>
+        <a class="btn" href="index.html" data-lang="en">Back to Home</a>
+      </section>
+    </main>
+  </div>
+  <script>
+    const root = document.documentElement;
+    const langToggle = document.getElementById('langToggle');
+    const themeToggle = document.getElementById('themeToggle');
+    function setLanguage(lang) {
+      const activeLang = lang === 'en' ? 'en' : 'de';
+      root.lang = activeLang;
+      root.classList.toggle('lang-de', activeLang === 'de');
+      root.classList.toggle('lang-en', activeLang === 'en');
+      localStorage.setItem('portfolio-lang', activeLang);
+      langToggle.textContent = activeLang === 'de' ? 'EN' : 'DE';
+      langToggle.setAttribute('aria-pressed', String(activeLang === 'en'));
+      langToggle.setAttribute('aria-label', activeLang === 'de' ? 'Switch to English' : 'Auf Deutsch wechseln');
+    }
+    function setTheme(theme) {
+      const activeTheme = theme === 'dark' ? 'dark' : 'light';
+      root.setAttribute('data-theme', activeTheme);
+      localStorage.setItem('portfolio-theme', activeTheme);
+      themeToggle.setAttribute('aria-pressed', String(activeTheme === 'dark'));
+    }
+    setLanguage(localStorage.getItem('portfolio-lang') || 'de');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setTheme(localStorage.getItem('portfolio-theme') || (prefersDark ? 'dark' : 'light'));
+    langToggle.addEventListener('click', () => setLanguage(root.lang === 'de' ? 'en' : 'de'));
+    themeToggle.addEventListener('click', () => setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
+  </script>
+</body>
+</html>

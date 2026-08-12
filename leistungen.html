@@ -30,6 +30,7 @@
     .tag-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px} .tag{padding:8px 12px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);font-size:.9rem}
     .image-slot{margin-top:18px;border:1.5px dashed var(--line);border-radius:16px;min-height:250px;background:linear-gradient(180deg,color-mix(in srgb,var(--surface-2) 70%,transparent),transparent),var(--surface-2);display:grid;place-items:center;text-align:center;padding:24px;color:var(--muted)}
     .image-slot.tall{min-height:360px} .image-slot small{display:block;margin-top:8px}
+    .media-frame{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:var(--surface-2);box-shadow:var(--shadow)} .media-frame img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10} .media-frame figcaption{padding:12px 16px;font-size:.9rem;color:var(--muted)}
     .split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center} .stat{padding:18px;border-radius:16px;background:var(--surface-2);border:1px solid var(--line)}
     .footer{padding:34px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
     [data-lang]{display:none} html.lang-de [data-lang="de"],html.lang-en [data-lang="en"]{display:block} html.lang-de [data-lang-inline="de"],html.lang-en [data-lang-inline="en"]{display:inline}
@@ -80,27 +81,25 @@
         <p data-lang="en">Modeling of transport, drainage, and utility systems for coordinated planning stages and clean data structures.</p>
         <div class="tag-list"><span class="tag">Civil 3D</span><span class="tag">Navisworks</span><span class="tag">InfraWorks</span></div>
       </div>
-      <div class="image-slot">
-        <div>
-          <strong data-lang="de">Bildplatz BIM-Modell</strong>
-          <strong data-lang="en">BIM model image slot</strong>
-          <small data-lang="de">Hier ein Screenshot von Corridor, Pipe Network oder BIM-Modell einfügen.</small>
-          <small data-lang="en">Place a corridor, pipe network, or BIM model screenshot here.</small>
-        </div>
-      </div>
+      <figure class="media-frame">
+        <img src="images/bim-project.webp" alt="Technical BIM visualization of a road and bridge project" loading="lazy">
+        <figcaption>
+          <span data-lang="de">Koordinierte BIM-Modellierung von Verkehrsanlagen, Entwässerung und Versorgungsleitungen.</span>
+          <span data-lang="en">Coordinated BIM modeling of transport, drainage, and utility infrastructure.</span>
+        </figcaption>
+      </figure>
     </div>
   </section>
 
   <section>
     <div class="container grid-2">
-      <div class="image-slot">
-        <div>
-          <strong data-lang="de">Bildplatz Straßenplanung</strong>
-          <strong data-lang="en">Road design image slot</strong>
-          <small data-lang="de">Zum Beispiel Lageplan, Querschnitt oder Achsendarstellung.</small>
-          <small data-lang="en">For example layout, cross section, or alignment drawing.</small>
-        </div>
-      </div>
+      <figure class="media-frame">
+        <img src="images/urban-road.webp" alt="Sustainable urban road with cycle lanes and bus stop" loading="lazy">
+        <figcaption>
+          <span data-lang="de">Straßenraumgestaltung mit Schutzstreifen, Grünflächen und barrierefreien Haltestellen.</span>
+          <span data-lang="en">Street design with cycle lanes, green areas, and accessible bus stops.</span>
+        </figcaption>
+      </figure>
       <div class="card box">
         <h2 data-lang="de">Straßen- und Entwurfsplanung</h2>
         <h2 data-lang="en">Road and design planning</h2>

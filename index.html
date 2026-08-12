@@ -30,6 +30,7 @@
     .tag-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px} .tag{padding:8px 12px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);font-size:.9rem}
     .image-slot{margin-top:18px;border:1.5px dashed var(--line);border-radius:16px;min-height:250px;background:linear-gradient(180deg,color-mix(in srgb,var(--surface-2) 70%,transparent),transparent),var(--surface-2);display:grid;place-items:center;text-align:center;padding:24px;color:var(--muted)}
     .image-slot.tall{min-height:360px} .image-slot small{display:block;margin-top:8px}
+    .media-frame{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:var(--surface-2);box-shadow:var(--shadow)} .media-frame img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10} .media-frame figcaption{padding:12px 16px;font-size:.9rem;color:var(--muted)} .hero-visual img{aspect-ratio:16/10}
     .split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center} .stat{padding:18px;border-radius:16px;background:var(--surface-2);border:1px solid var(--line)}
     .footer{padding:34px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
     [data-lang]{display:none} html.lang-de [data-lang="de"],html.lang-en [data-lang="en"]{display:block} html.lang-de [data-lang-inline="de"],html.lang-en [data-lang-inline="en"]{display:inline}
@@ -74,16 +75,13 @@
           <a class="btn btn-secondary" href="projekte.html" data-lang="en">Browse projects</a>
         </div>
       </div>
-      <div class="card box">
-        <h2 data-lang="de">Seitenstruktur</h2>
-        <h2 data-lang="en">Site structure</h2>
-        <div class="grid-2">
-          <div class="stat"><strong>Startseite</strong><p data-lang="de">Kurze Positionierung und Einstieg.</p><p data-lang="en">Short positioning and entry point.</p></div>
-          <div class="stat"><strong>Leistungen</strong><p data-lang="de">Jede Leistung klar unterteilt.</p><p data-lang="en">Each service clearly separated.</p></div>
-          <div class="stat"><strong>Projekte</strong><p data-lang="de">Technische Projektbeispiele und Referenzen.</p><p data-lang="en">Technical project examples and references.</p></div>
-          <div class="stat"><strong>Kontakt</strong><p data-lang="de">Direkte Anfrage und Verfügbarkeit.</p><p data-lang="en">Direct inquiry and availability.</p></div>
-        </div>
-      </div>
+      <figure class="card box media-frame hero-visual">
+        <img src="images/road-hero.webp" alt="Modern highway interchange at sunset" loading="eager">
+        <figcaption>
+          <span data-lang="de">Verkehrsinfrastruktur als Verbindung von Präzision, Sicherheit und nachhaltiger Mobilität.</span>
+          <span data-lang="en">Transport infrastructure combining precision, safety, and sustainable mobility.</span>
+        </figcaption>
+      </figure>
     </div>
   </section>
 
@@ -95,14 +93,13 @@
         <p data-lang="de">Die Referenzseiten arbeiten mit klaren Themenblöcken, wenigen starken Aussagen und sichtbaren Übergängen zwischen Inhalt und Bildbereichen. Deshalb habe ich im neuen Aufbau feste Bildflächen vorgesehen, die später mit deinen Projektbildern ersetzt werden können.</p>
         <p data-lang="en">The reference sites rely on clear thematic blocks, a few strong messages, and visible transitions between text and visual areas. The new structure therefore includes fixed media zones that can later be replaced with your project images.</p>
       </div>
-      <div class="image-slot tall">
-        <div>
-          <strong data-lang="de">Bildbereich auf der Startseite</strong>
-          <strong data-lang="en">Homepage image area</strong>
-          <small data-lang="de">Hier kannst du später ein Büro-, Modell- oder Projektbild einfügen.</small>
-          <small data-lang="en">You can later place an office, model, or project image here.</small>
-        </div>
-      </div>
+      <figure class="media-frame">
+        <img src="images/bim-project.webp" alt="Technical BIM visualization of a road and bridge project" loading="lazy">
+        <figcaption>
+          <span data-lang="de">BIM-Modellierung von Straßen-, Brücken-, Entwässerungs- und Versorgungsanlagen.</span>
+          <span data-lang="en">BIM modeling of road, bridge, drainage, and utility infrastructure.</span>
+        </figcaption>
+      </figure>
     </div>
   </section>
 </main>

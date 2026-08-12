@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="images/bim-project.webp" fetchpriority="high" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#f5f3ef" />
   <script>
@@ -77,6 +78,27 @@
       .skip-link{position:absolute;left:-9999px;top:auto;z-index:9999;padding:10px 14px;border-radius:8px;background:var(--text);color:var(--bg)}.skip-link:focus{left:16px;top:16px}.skip-link:focus-visible{outline:3px solid var(--accent);outline-offset:3px}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+    /* Original video-led hero treatment: image-based for a lightweight first load, with optional motion controls. */
+    .hero-cinematic{position:relative;isolation:isolate;min-height:clamp(520px,67vw,710px);padding:0;overflow:hidden;background:#061a20;color:#fff;display:flex;align-items:stretch}
+    .hero-cinematic::before{content:"";position:absolute;inset:-5%;z-index:-3;background:url("images/bim-project.webp") center/cover no-repeat;transform:scale(1.04);animation:heroDrift 18s cubic-bezier(.23,1,.32,1) infinite alternate;will-change:transform}
+    .hero-cinematic::after{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(3,15,20,.96) 0%,rgba(3,15,20,.8) 37%,rgba(3,15,20,.36) 66%,rgba(3,15,20,.24) 100%),linear-gradient(0deg,rgba(3,15,20,.54),transparent 46%)}
+    .hero-tech-grid{position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.22;background-image:linear-gradient(rgba(117,230,220,.2) 1px,transparent 1px),linear-gradient(90deg,rgba(117,230,220,.2) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(90deg,transparent,black 42%,transparent 92%)}
+    .hero-stage{width:100%;display:flex;align-items:flex-end;padding-top:clamp(74px,10vw,126px);padding-bottom:clamp(46px,7vw,86px)}
+    .hero-copy{position:relative;max-width:790px;animation:heroReveal .7s cubic-bezier(.23,1,.32,1) both}
+    .hero-cinematic .eyebrow{background:rgba(190,245,239,.13);border:1px solid rgba(190,245,239,.25);color:#d6fffa;backdrop-filter:blur(6px)}
+    .hero-cinematic h1{max-width:13ch;color:#fff;text-wrap:balance;text-shadow:0 2px 22px rgba(0,0,0,.28)}
+    .hero-cinematic .lead{max-width:61ch;color:rgba(244,251,250,.86);font-size:clamp(1rem,1.7vw,1.16rem)}
+    .hero-cinematic .btn-primary{background:#bff5ef;color:#073b3d;box-shadow:0 10px 24px rgba(0,0,0,.18)}
+    .hero-cinematic .btn-secondary{border-color:rgba(255,255,255,.36);background:rgba(255,255,255,.06);color:#fff;backdrop-filter:blur(5px)}
+    .hero-footer-row{margin-top:clamp(28px,4vw,46px);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;color:rgba(244,251,250,.82)}
+    .hero-signals{display:flex;flex-wrap:wrap;gap:9px}.hero-signal{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:7px 10px;background:rgba(4,22,27,.4);font-size:.78rem;font-weight:600;letter-spacing:.01em}.hero-signal::before{content:"";width:6px;height:6px;border-radius:50%;background:#79e6dc;box-shadow:0 0 0 4px rgba(121,230,220,.13)}
+    .motion-toggle{border:1px solid rgba(255,255,255,.3);border-radius:999px;background:rgba(4,22,27,.44);color:#fff;padding:9px 12px;font:inherit;font-size:.84rem;cursor:pointer;backdrop-filter:blur(6px)}.motion-toggle:hover{background:rgba(255,255,255,.14)}html .motion-toggle [data-motion-label]{display:none!important}html .motion-toggle[data-motion="playing"] [data-motion-label="playing"],html .motion-toggle[data-motion="paused"] [data-motion-label="paused"]{display:inline!important}
+    .hero-cinematic.is-motion-paused::before{animation-play-state:paused}
+    @keyframes heroDrift{from{transform:scale(1.04) translate3d(-1.2%,0,0)}to{transform:scale(1.11) translate3d(1.2%,-.8%,0)}}
+    @keyframes heroReveal{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:680px){.hero-cinematic{min-height:600px}.hero-cinematic::after{background:linear-gradient(90deg,rgba(3,15,20,.95),rgba(3,15,20,.68)),linear-gradient(0deg,rgba(3,15,20,.72),transparent 60%)}.hero-stage{padding-top:96px}.hero-cinematic h1{max-width:11ch}.hero-footer-row{align-items:flex-start}.motion-toggle{width:100%;text-align:left}}
+    @media (prefers-reduced-motion:reduce){.hero-cinematic::before{animation:none;transform:scale(1.05)}.hero-copy{animation:none}.motion-toggle{display:none}}
   </style>
   <script type="application/ld+json">
   {
@@ -114,11 +136,12 @@
 </header>
 
 <main id="main">
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="card box">
-        <div class="eyebrow" data-lang="de">Klar · technisch · projektorientiert</div>
-        <div class="eyebrow" data-lang="en">Clear · technical · project-driven</div>
+  <section class="hero hero-cinematic" aria-label="BIM infrastructure visualization">
+    <div class="hero-tech-grid" aria-hidden="true"></div>
+    <div class="container hero-stage">
+      <div class="hero-copy">
+        <div class="eyebrow" data-lang="de">BIM · Verkehrsanlagen · Entwässerung</div>
+        <div class="eyebrow" data-lang="en">BIM · Transport infrastructure · Drainage</div>
         <h1 data-lang="de">BIM-gestützte Straßen- und Entwässerungsplanung</h1>
         <h1 data-lang="en">BIM-Based Road and Drainage Design</h1>
         <p class="lead" data-lang="de">Modellbasierte Planung und Koordination für Verkehrswege, Entwässerungsanlagen und Leitungsinfrastruktur – von der Bestandsmodellierung bis zur Planableitung und IFC-Datenübergabe.</p>
@@ -129,14 +152,21 @@
           <a class="btn btn-secondary" href="projekte.html" data-lang="de">Projektbeispiele ansehen</a>
           <a class="btn btn-secondary" href="projekte.html" data-lang="en">View Project Examples</a>
         </div>
+        <div class="hero-footer-row">
+          <div class="hero-signals" aria-label="Technical focus">
+            <span class="hero-signal">ISO 19650</span>
+            <span class="hero-signal" data-lang="de">HOAI LPH 2–5</span>
+            <span class="hero-signal" data-lang="en">HOAI phases 2–5</span>
+            <span class="hero-signal">VESTRA · Civil 3D</span>
+          </div>
+          <button id="motionToggle" class="motion-toggle" type="button" data-motion="playing" aria-pressed="false">
+            <span data-lang="de" data-motion-label="playing">Bewegung anhalten</span>
+            <span data-lang="en" data-motion-label="playing">Pause motion</span>
+            <span data-lang="de" data-motion-label="paused">Bewegung fortsetzen</span>
+            <span data-lang="en" data-motion-label="paused">Resume motion</span>
+          </button>
+        </div>
       </div>
-      <figure class="card box media-frame hero-visual">
-        <img src="images/bim-project.webp" alt="Abstract BIM infrastructure visualization of a road, bridge, and drainage systems" width="2560" height="1440" loading="eager" fetchpriority="high" decoding="async">
-        <figcaption>
-          <span data-lang="de">Visualisierung – konzeptionelles Demonstrationsmodell, keine vertraulichen Projektdaten.</span>
-          <span data-lang="en">Visualization – conceptual demonstration model, no confidential project data.</span>
-        </figcaption>
-      </figure>
     </div>
   </section>
 

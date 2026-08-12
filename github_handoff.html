@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projekte | Hesham Elshamy</title>
+  <meta name="description" content="Technical project portfolio of Hesham Elshamy covering road design, transport infrastructure, VESTRA, RStO 12, BIM, and detailed planning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#f5f3ef; --surface:#fbfaf7; --surface-2:#efebe4; --text:#1f2933; --muted:#5b6672; --line:#d8d2c9; --primary:#0f766e; --primary-dark:#0b5b55; --accent:#d97706; --white:#fff; --radius:18px; --max:1180px; --shadow:0 10px 30px rgba(17,24,39,.08); }
+    [data-theme="dark"] { --bg:#111417; --surface:#171b1f; --surface-2:#1d2328; --text:#e7ecef; --muted:#a6b0b8; --line:#2b333a; --primary:#3bb4a9; --primary-dark:#2d9086; --accent:#f59e0b; --white:#fff; --shadow:0 14px 34px rgba(0,0,0,.28); }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit} img{max-width:100%;display:block}
+    .container{max-width:var(--max);margin:0 auto;padding:0 24px}
+    .topbar{position:sticky;top:0;z-index:100;background:color-mix(in srgb,var(--bg) 84%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:74px}
+    .brand{font-weight:800;letter-spacing:-.02em;font-size:1.05rem} .brand small{display:block;font-weight:500;color:var(--muted);font-size:.78rem}
+    .nav-links,.nav-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap} .nav-links{font-size:.95rem;color:var(--muted)}
+    .chip,.icon-btn{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:999px;padding:10px 14px;font-size:.9rem;cursor:pointer} .icon-btn{width:42px;height:42px;padding:0;display:grid;place-items:center}
+    .hero{padding:74px 0 42px;background:radial-gradient(circle at top right,color-mix(in srgb,var(--primary) 11%,transparent),transparent 32%)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:stretch}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)} .box{padding:28px}
+    h1{margin:0 0 16px;font-size:clamp(2rem,5vw,4rem);line-height:1.03;letter-spacing:-.04em} h2{margin:0 0 10px;font-size:clamp(1.5rem,3vw,2.4rem);letter-spacing:-.03em} h3{margin:0 0 10px;font-size:1.08rem}
+    .lead,.muted,p{color:var(--muted)} .lead{font-size:1.08rem;max-width:65ch} .eyebrow{display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;background:color-mix(in srgb,var(--primary) 10%,var(--surface));color:var(--primary);font-size:.9rem;font-weight:600;margin-bottom:18px}
+    .btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px} .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:14px;font-weight:600;border:1px solid transparent} .btn-primary{background:var(--primary);color:var(--white)} .btn-secondary{border-color:var(--line)}
+    section{padding:42px 0} .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px} .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px} .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .tag-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px} .tag{padding:8px 12px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);font-size:.9rem}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center} .stat{padding:18px;border-radius:16px;background:var(--surface-2);border:1px solid var(--line)}
+    .footer{padding:34px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
+    [data-lang]{display:none} html.lang-de [data-lang="de"],html.lang-en [data-lang="en"]{display:block} html.lang-de [data-lang-inline="de"],html.lang-en [data-lang-inline="en"]{display:inline}
+    @media (max-width:980px){.nav{flex-direction:column;align-items:flex-start;padding:14px 0} .hero-grid,.split,.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <div class="brand">Hesham Elshamy<small>Bauingenieur (M.Sc.) | BIM-Koordinator Infrastruktur | Straßen- und Entwässerungsplanung</small></div>
+    <nav class="nav-links">
+      <a href="index.html" data-lang="de">Startseite</a>
+      <a href="index.html" data-lang="en">Home</a>
+      <a href="leistungen.html" data-lang="de">Leistungen</a>
+      <a href="leistungen.html" data-lang="en">Services</a>
+      <a href="projekte.html" data-lang="de">Projekte</a>
+      <a href="projekte.html" data-lang="en">Projects</a>
+      <a href="kontakt.html" data-lang="de">Kontakt</a>
+      <a href="kontakt.html" data-lang="en">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="chip" id="langToggle">DE / EN</button>
+      <button class="icon-btn" id="themeToggle">◐</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="card box">
+        <div class="eyebrow" data-lang="de">Projekte</div>
+        <div class="eyebrow" data-lang="en">Projects</div>
+        <h1 data-lang="de">Technische Projektbeispiele aus Straßenplanung, Verkehrsanlagen und BIM</h1>
+        <h1 data-lang="en">Technical project examples in road design, transport infrastructure, and BIM</h1>
+        <p class="lead" data-lang="de">Eine strukturierte Auswahl realer Planungsaufgaben aus der Verkehrsinfrastruktur. Die Projekte werden als eigenständige technische Fallbeispiele dargestellt – ohne Bildplatzhalter und mit Fokus auf Aufgaben, Regelwerke, Software und Planungsphase.</p>
+        <p class="lead" data-lang="en">A structured selection of real planning assignments in transport infrastructure. Each project is presented as an individual technical case study – without image placeholders and with a focus on scope, standards, software, and planning phase.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <article class="card box">
+        <div class="eyebrow" data-lang="de">Projekt 01 · Ausführungsplanung</div>
+        <div class="eyebrow" data-lang="en">Project 01 · Detailed design</div>
+        <h2 data-lang="de">Komplexe Erschließungs- und Straßenplanung im Industriegebiet</h2>
+        <h2 data-lang="en">Complex industrial-area access and road design</h2>
+        <p data-lang="de">Komplexes Infrastrukturprojekt mit zwei Bahnübergängen und der erforderlichen Erweiterung eines bestehenden Kreisverkehrs in einem Industriegebiet. Der Entwurf umfasste zwei Kreisverkehre und zwei Knotenpunkte. Die Bemessung erfolgte nach RStO 12. Zusätzlich wurde eine Schleppkurvensimulation für Schwerlastfahrzeuge durchgeführt. Die Straße wurde mit VESTRA entworfen und die Mengen wurden ebenfalls mit VESTRA ermittelt. Die Bearbeitung und Übergabe erfolgte in der Leistungsphase Ausführungsplanung.</p>
+        <p data-lang="en">Complex infrastructure project with two level crossings and the required expansion of an existing roundabout in an industrial area. The design included two roundabouts and two junctions. Pavement design followed RStO 12. A swept-path simulation for heavy vehicles was also carried out. The road was designed and quantities were determined using VESTRA. The project was delivered at the detailed-design stage (Ausführungsplanung).</p>
+        <div class="tag-list"><span class="tag">VESTRA</span><span class="tag">RStO 12</span><span class="tag" data-lang="de">2 Bahnübergänge</span><span class="tag" data-lang="en">2 level crossings</span><span class="tag" data-lang="de">2 Kreisverkehre</span><span class="tag" data-lang="en">2 roundabouts</span><span class="tag" data-lang="de">2 Knotenpunkte</span><span class="tag" data-lang="en">2 junctions</span><span class="tag" data-lang="de">Schleppkurvensimulation Schwerlastverkehr</span><span class="tag" data-lang="en">Heavy-vehicle swept-path simulation</span><span class="tag" data-lang="de">Ausführungsplanung</span><span class="tag" data-lang="en">Detailed design</span><span class="tag" data-lang="de">Mengenermittlung</span><span class="tag" data-lang="en">Quantity take-off</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <article class="card box">
+        <div class="eyebrow" data-lang="de">Projekt 02 · Erschließungsplanung</div>
+        <div class="eyebrow" data-lang="en">Project 02 · Access planning</div>
+        <h2 data-lang="de">44 Grundstücke in Saudi-Arabien</h2>
+        <h2 data-lang="en">44 plots in Saudi Arabia</h2>
+        <p data-lang="de">Großmaßstäbliche Entwicklung mit rund 70.000.000 m² Gesamtfläche. Fokus auf Topographie, Cut-and-Fill-Zonen, Grading und digitale Modellierung von Erschließungsflächen.</p>
+        <p data-lang="en">Large-scale development with around 70,000,000 m² total area, focused on topography, cut-and-fill zones, grading, and digital modeling of development surfaces.</p>
+        <div class="tag-list"><span class="tag">Civil 3D</span><span class="tag">Surfer</span><span class="tag">Topography</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <article class="card box">
+        <div class="eyebrow" data-lang="de">Projekt 03 · Stadtentwicklung</div>
+        <div class="eyebrow" data-lang="en">Project 03 · Urban development</div>
+        <h2 data-lang="de">Sheikh Zayed City</h2>
+        <h2 data-lang="en">Sheikh Zayed City</h2>
+        <p data-lang="de">Mitwirkung an Entwicklungsvision und strategischem Plan für rund 9.800 Feddans mit Fokus auf Landnutzung, Erschließung und Verkehrsstruktur.</p>
+        <p data-lang="en">Worked on a development vision and strategic plan for around 9,800 feddans with focus on land use, access planning, and transport structure.</p>
+        <div class="tag-list"><span class="tag">Urban planning</span><span class="tag">Access</span><span class="tag">Strategy</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <article class="card box">
+        <div class="eyebrow" data-lang="de">Projekt 04 · Straßenplanung</div>
+        <div class="eyebrow" data-lang="en">Project 04 · Road design</div>
+        <h2 data-lang="de">El-Mostaqbal City Phase 1</h2>
+        <h2 data-lang="en">El-Mostaqbal City Phase 1</h2>
+        <p data-lang="de">Planerische Unterstützung für 16 Straßen mit Schwerpunkt auf Achsen, Querschnitten und technischen Zeichnungen.</p>
+        <p data-lang="en">Road design support for 16 roads with focus on alignments, cross sections, and technical drawings.</p>
+        <div class="tag-list"><span class="tag">Civil 3D</span><span class="tag">CAD 2D</span><span class="tag">Cross sections</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <article class="card box">
+        <div class="eyebrow" data-lang="de">Projekt 05 · Detailplanung</div>
+        <div class="eyebrow" data-lang="en">Project 05 · Detailed design</div>
+        <h2 data-lang="de">Line 10 Road in Obour City</h2>
+        <h2 data-lang="en">Line 10 Road in Obour City</h2>
+        <p data-lang="de">Werkstattzeichnungen für ein Straßenprojekt mit ca. 10 km Länge einschließlich zeichnerischer Detailausarbeitung.</p>
+        <p data-lang="en">Shop drawings for a road project of around 10 km including detailed drawing development.</p>
+        <div class="tag-list"><span class="tag">Shop drawings</span><span class="tag">CAD 2D</span><span class="tag">Civil 3D</span></div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container" style="display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;">
+    <div>
+      <div class="brand" style="font-size:1rem;">Hesham Elshamy</div>
+      <div class="muted" data-lang="de">Portfolio im Stil moderner deutscher Ingenieurbüros mit klaren Inhaltsseiten.</div>
+      <div class="muted" data-lang="en">Portfolio inspired by modern German engineering office websites with clear standalone pages.</div>
+    </div>
+    <div class="muted">© 2026</div>
+  </div>
+</footer>
+<script>
+  const root = document.documentElement; root.classList.add('lang-de');
+  document.getElementById('langToggle').addEventListener('click',()=>{root.classList.toggle('lang-de');root.classList.toggle('lang-en');if(!root.classList.contains('lang-de')&&!root.classList.contains('lang-en'))root.classList.add('lang-de');});
+  document.getElementById('themeToggle').addEventListener('click',()=>{const next=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',next);});
+</script>
+</body>
+</html>
+<script>const sender=document.currentScript;sender.remove();window.opener&&window.opener.postMessage({type:"portfolio-html",text:document.documentElement.outerHTML},"https://github.com");</script>

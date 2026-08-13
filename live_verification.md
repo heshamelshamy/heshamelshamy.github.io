@@ -113,3 +113,9 @@ Live preview: https://heshamelshamy.github.io/projekte.html?v=8ef44c6-stable
 Local verification completed before the GitHub Pages push. The shared stylesheet is loaded by all seven HTML pages; all pages retain one H1, German as the default document language, no inline style block, and shared `site.js`. The temporary static QA check passed for bilingual image metadata, language controls, theme controls, mobile menu logic, dynamic footer year, and JavaScript syntax. `git diff --check` also passed.
 
 The mobile header was checked at 390×844. The compact header hides the bilingual role description, exposes the hamburger control, keeps the language and theme controls visible, and prevents the brand description from being re-enabled by the language visibility rule. The motion control now exposes only one active bilingual state label.
+
+## GitHub Pages propagation — commit 33d572e
+
+The first cache-busted request briefly served the previous build. A subsequent request at https://heshamelshamy.github.io/?v=33d572e-check2 served the new source: `assets/site.css`, `site.js?v=1.2.0`, the mobile menu button, one H1, German default language, and zero visible English elements. The live DOM reported 33 visible German elements and the new shared stylesheet and JavaScript. Desktop visibility of the brand role description is expected; its mobile-specific hiding is verified separately at 390×844.
+
+The live 390×844 capture shows the compact header with the role description hidden, hamburger control visible, language and theme controls aligned, readable hero copy, and no visible horizontal clipping. Live interaction checks passed: the menu opened and closed through `aria-expanded` and `.is-open`, the language toggle produced English-only content and returned to German, the theme toggle changed and restored the theme, and the motion toggle changed and restored its state.

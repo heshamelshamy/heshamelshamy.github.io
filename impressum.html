@@ -1,65 +1,115 @@
 <!DOCTYPE html>
-<html lang="de" data-theme="light">
+<html lang="de" data-theme="dark" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f5f3ef" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  
+  <title>Impressum | Hesham Elshamy · M.Sc. Bauingenieurwesen</title>
+  <meta name="description" content="Impressum und Anbieterkennzeichnung nach § 5 DDG für das Portfolio von Hesham Elshamy." />
+  <link rel="canonical" href="https://heshamelshamy.github.io/impressum.html" />
+
+  <!-- Google Fonts: Inter & Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            arabic: ['Cairo', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+
   <script>
     (() => {
-      const root = document.documentElement;
       try {
-        const savedLanguage = localStorage.getItem('portfolio-lang');
-        const language = savedLanguage === 'en' ? 'en' : 'de';
+        const root = document.documentElement;
         const savedTheme = localStorage.getItem('portfolio-theme');
         const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const theme = savedTheme === 'dark' || (!savedTheme && prefersDark) ? 'dark' : 'light';
-        root.lang = language;
-        root.classList.remove('lang-de', 'lang-en');
-        root.classList.add(`lang-${language}`);
-        root.dataset.theme = theme;
-        root.style.colorScheme = theme;
-      } catch {
-        root.classList.add('lang-de');
-      }
+        const theme = savedTheme ? savedTheme : (prefersDark ? 'dark' : 'light');
+        root.setAttribute('data-theme', theme);
+      } catch (e) {}
     })();
   </script>
-  <script src="site.js?v=1.2.0" defer></script>
-  <title>Impressum | Hesham Elshamy</title>
-  <meta name="description" content="Impressum und Anbieterkennzeichnung für das Portfolio von Hesham Elshamy." />
-  <link rel="canonical" href="https://heshamelshamy.github.io/impressum.html" />
-  <meta property="og:locale" content="de_DE" />
-  <meta property="og:locale:alternate" content="en_GB" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://heshamelshamy.github.io/impressum.html" />
-  <meta property="og:title" content="Impressum — Hesham Elshamy" />
-  <meta property="og:description" content="Anbieterinformationen und Kontaktangaben für die Portfolio-Website von Hesham Elshamy." />
-  <meta property="og:image" content="https://heshamelshamy.github.io/images/bim-project.webp" />
-  <meta property="og:image:alt" content="Abstract BIM infrastructure visualization" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Impressum — Hesham Elshamy" />
-  <meta name="twitter:description" content="Anbieterinformationen und Kontaktangaben für die Portfolio-Website von Hesham Elshamy." />
-  <meta name="twitter:image" content="https://heshamelshamy.github.io/images/bim-project.webp" />
-
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Hesham Elshamy",
-    "jobTitle": "Civil Engineer (M.Sc.) — BIM Modeler for Infrastructure",
-    "description": "Civil Engineer (M.Sc.) focused on BIM-based road and drainage design for infrastructure projects.",
-    "url": "https://heshamelshamy.github.io/",
-    "sameAs": ["https://www.linkedin.com/in/heshamelshamy/", "https://github.com/heshamelshamy/heshamelshamy.github.io"],
-    "knowsAbout": ["BIM modeling", "road design", "drainage design", "IFC data exchange", "Civil 3D", "VESTRA INFRAVISION"]
-  }
-</script>
-  <link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content / Zum Inhalt</a>
-<header class="topbar"><div class="container nav"><div class="brand">Hesham Elshamy<small data-lang="de">Bauingenieur (M.Sc.) · BIM-Modellierer Infrastruktur · Straßen- und Entwässerungsplanung</small><small data-lang="en">Civil Engineer (M.Sc.) · BIM Modeler for Infrastructure · Road and Drainage Design</small></div><nav id="primary-navigation" class="nav-links" aria-label="Primary navigation / Hauptnavigation"><a href="index.html" data-lang="de">Startseite</a><a href="index.html" data-lang="en">Home</a><a href="leistungen.html" data-lang="de">Leistungen</a><a href="leistungen.html" data-lang="en">Services</a><a href="projekte.html" data-lang="de">Projektbeispiele</a><a href="projekte.html" data-lang="en">Project Examples</a><a href="kontakt.html" data-lang="de">Kontakt</a><a href="kontakt.html" data-lang="en">Contact</a></nav><button class="icon-btn nav-menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation menu"><span aria-hidden="true">☰</span></button><div class="nav-actions"><button class="chip" id="langToggle" aria-pressed="false" aria-label="Toggle language">DE / EN</button><button class="icon-btn" id="themeToggle" aria-label="Toggle theme"><span class="theme-icon" aria-hidden="true"></span></button></div></div></header>
-<main id="main"><section class="hero"><div class="container"><article class="card"><div class="eyebrow" data-lang="de">Rechtliches</div><div class="eyebrow" data-lang="en">Legal information</div><h1 ><span data-lang-inline="de">Impressum</span><span data-lang-inline="en">Legal Notice</span></h1><h2 data-lang="de">Angaben zum Anbieter</h2><h2 data-lang="en">Provider information</h2><p><strong>Hesham Elshamy</strong><br>Overhoffstraße 177<br>44149 Dortmund<br>Deutschland</p><p><strong>E-Mail:</strong> <a href="mailto:heshamelshamy2000@gmail.com">heshamelshamy2000@gmail.com</a><br><strong>Telefon:</strong> <a href="tel:+491782362766">+49 178 2362766</a></p><p data-lang="de"><strong>Verantwortlich für den Inhalt:</strong> Hesham Elshamy, soweit nicht anders gekennzeichnet.</p><p data-lang="en"><strong>Content responsibility:</strong> Hesham Elshamy, unless otherwise identified.</p><div class="legal-note" data-lang="de">Arbeitsentwurf für die Portfolio-Website. Bitte vor der endgültigen Veröffentlichung rechtlich prüfen lassen, insbesondere hinsichtlich Anbieterkennzeichnung und berufsrechtlicher Anforderungen.</div><div class="legal-note" data-lang="en">Working draft for the portfolio website. Please obtain a legal review before final publication, especially regarding provider information and professional-law requirements.</div></article></div></section></main>
-<footer class="footer"><div class="container"><div class="brand">Hesham Elshamy</div><div class="footer-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutzerklärung / Privacy Policy</a><a href="https://www.linkedin.com/in/heshamelshamy/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/heshamelshamy/heshamelshamy.github.io" target="_blank" rel="noopener noreferrer">GitHub</a><a href="kontakt.html">Kontakt / Contact</a></div></div></footer>
+
+<body class="blueprint-grid min-h-screen flex flex-col antialiased">
+  
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-[#090e17]/85 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-600 to-slate-800 flex items-center justify-center text-white font-bold text-base">
+          HE
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-slate-900 dark:text-white text-base">Hesham Elshamy</span>
+          <span class="text-xs text-slate-500 dark:text-slate-400">M.Sc. Bauingenieurwesen · BIM Consultant</span>
+        </div>
+      </a>
+      <a href="index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-sky-600 dark:text-sky-400 hover:underline">
+        ← Zurück zur Startseite
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="card-engineering p-8 sm:p-12">
+      <span class="text-xs font-mono uppercase tracking-widest text-sky-600 dark:text-sky-400 font-bold block mb-2">
+        Rechtliche Angaben
+      </span>
+      <h1 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-8">
+        Impressum
+      </h1>
+
+      <div class="space-y-6 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+        <div>
+          <h2 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</h2>
+          <p class="font-semibold">Hesham Elshamy</p>
+          <p>M.Sc. Bauingenieurwesen</p>
+          <p>Overhoffstraße 177</p>
+          <p>44149 Dortmund</p>
+          <p>Deutschland</p>
+        </div>
+
+        <div class="pt-4 border-t border-slate-200 dark:border-slate-800">
+          <h2 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Kontakt</h2>
+          <p><strong>E-Mail:</strong> <a href="mailto:heshamelshamy2000@gmail.com" class="text-sky-600 dark:text-sky-400 underline">heshamelshamy2000@gmail.com</a></p>
+          <p><strong>Telefon:</strong> <a href="tel:+491782362766" class="text-sky-600 dark:text-sky-400 underline font-mono">+49 178 2362766</a></p>
+        </div>
+
+        <div class="pt-4 border-t border-slate-200 dark:border-slate-800">
+          <h2 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+          <p>Hesham Elshamy</p>
+          <p>Overhoffstraße 177, 44149 Dortmund, Deutschland</p>
+        </div>
+
+        <div class="pt-4 border-t border-slate-200 dark:border-slate-800">
+          <h2 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Berufsbezeichnung und berufsrechtliche Regelungen</h2>
+          <p><strong>Berufsbezeichnung:</strong> Bauingenieur (Master of Science, verliehen durch die Universität Duisburg-Essen, Deutschland).</p>
+          <p class="mt-2 text-xs text-slate-500 dark:text-slate-400">
+            Die auf dieser Website dargestellten Inhalte dienen der beruflichen Information über freiberufliche Ingenieurleistungen und BIM-Consulting im B2B-Bereich.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-8 text-center text-xs text-slate-500">
+    <p>© 2026 Hesham Elshamy. Alle Rechte vorbehalten. · <a href="datenschutz.html" class="underline hover:text-sky-500">Datenschutz</a> · <a href="index.html" class="underline hover:text-sky-500">Startseite</a></p>
+  </footer>
+
 </body>
 </html>
